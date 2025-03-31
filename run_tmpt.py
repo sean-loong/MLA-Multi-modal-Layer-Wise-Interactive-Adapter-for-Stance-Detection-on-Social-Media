@@ -13,7 +13,9 @@ from transformers import AutoTokenizer, AutoImageProcessor
 from transformers import get_linear_schedule_with_warmup
 from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
 from utils.tools import set_seed, read_yaml, AttributeDict, save_results
+
 transformers.logging.set_verbosity_error()
+# only show warning and error messages
 
 os.environ["TOKENIZERS_PARALLELISM"] = 'false'
 
@@ -42,6 +44,7 @@ elif GLOBAL_ARGS.in_target:
 from utils.dataset_utils.data_config import data_configs as data_configs
 from utils.dataset_utils.data_config import datasets as datasets
 data_config = data_configs[GLOBAL_ARGS.dataset_name]
+# data_config = MTSEConfig
 
 # Set seeds for reproducibility
 SEED = [42, 67, 2022, 31, 15]
@@ -49,6 +52,7 @@ SEED = [42, 67, 2022, 31, 15]
 # if to save the model states
 SAVE_STATE = False
 SAVE_TEST_RESULT = True
+
 if GLOBAL_ARGS.debug_mode:
     print('=====================debug_mode=======================')
     SAVE_STATE = False
@@ -67,6 +71,7 @@ CUR_DIR = OUTPUT_DIR + f'/{DATASET_NAME}_{GLOBAL_ARGS.framework_name}_{GLOBAL_AR
 
 CUR_MODELS_DIR = CUR_DIR + '/models'
 CUR_RESULTS_DIR = CUR_DIR + '/results'
+
 if not GLOBAL_ARGS.debug_mode:
     if not os.path.isdir(CUR_DIR):
         os.makedirs(CUR_DIR)
@@ -103,6 +108,7 @@ logger = logging.getLogger()
 logger.setLevel('INFO')
 BASIC_FORMAT = '%(asctime)s - %(levelname)s - %(filename)-20s : %(lineno)s line - %(message)s'
 DATE_FORMAT = '%Y-%m-%d_%H:%M:%S'
+
 formatter = logging.Formatter(BASIC_FORMAT, DATE_FORMAT)
 chlr = logging.StreamHandler()
 chlr.setFormatter(formatter)
@@ -121,8 +127,12 @@ def handle_exception(exc_type, exc_value, exc_traceback):
 
 sys.excepthook = handle_exception
 
-LABELS = data_config.test_stance
+LABELS = data_config.test_stance # [0, 1, 2]
 DEVICE = torch.device('cuda:' + str(GLOBAL_ARGS.cuda_idx))
+
+# *****************************************************************************************************************************************************
+# *****************************************************************************************************************************************************
+
 
 def build_dataset(args, tokenizer, target_name=None):
     train_dataset_orig = datasets[GLOBAL_ARGS.framework_name](
@@ -237,21 +247,25 @@ def train_process(args, train_data_loader, valid_data_loader, test_data_loader, 
     no_weight_decay_identifiers = ['bias', 'LayerNorm.weight', 'layer_norm.weight']
 
     grouped_model_parameters = [
+    # 对参数分组后设置不同优化超参数，精细参数控制
         {'params': [param for name, param in model.named_parameters()
                     if any(identifier in name for identifier in transformer_identifiers) and
                     not any(identifier_ in name for identifier_ in no_weight_decay_identifiers)],
         'lr': args.transformer_learning_rate,
         'weight_decay': args.weight_decay},
+        
         {'params': [param for name, param in model.named_parameters()
                     if any(identifier in name for identifier in transformer_identifiers) and
                     any(identifier_ in name for identifier_ in no_weight_decay_identifiers)],
         'lr': args.transformer_learning_rate,
         'weight_decay': 0.0},
+        
         {'params': [param for name, param in model.named_parameters()
                     if any(identifier in name for identifier in linear_identifiers) and 
                     not any(identifier_ in name for identifier_ in no_weight_decay_identifiers)],
         'lr': args.linear_learning_rate,
         'weight_decay': args.weight_decay},
+        
         {'params': [param for name, param in model.named_parameters()
                     if any(identifier in name for identifier in linear_identifiers) and 
                     any(identifier_ in name for identifier_ in no_weight_decay_identifiers)],
@@ -260,12 +274,16 @@ def train_process(args, train_data_loader, valid_data_loader, test_data_loader, 
     ]
 
     optimizer = optim.AdamW(grouped_model_parameters, lr=args.linear_learning_rate)
+    # optimizer 启动用的是 linear_learning_rate，但实际每组参数都有各自的 lr
+    
     total_steps = len(train_data_loader) * args.num_epochs
 
     scheduler = get_linear_schedule_with_warmup(optimizer,
                                                 num_warmup_steps=total_steps*args.warmup_ratio,
                                                 num_training_steps=total_steps)
-
+    # scheduler.step() 控制 lr 按步数下降，其行为受 warmup_ratio 和 total_steps 控制；
+    
+    
     logging.info('Start training...')
     best_state = None
     best_valid_f1 = 0.0
@@ -275,6 +293,8 @@ def train_process(args, train_data_loader, valid_data_loader, test_data_loader, 
     best_test_recall = 0.0
     temp_path = CUR_MODELS_DIR + f'/{DATASET_NAME}_temp_model.pt'
     temp_results_path = CUR_RESULTS_DIR + f'/{DATASET_NAME}_{target_name}_temp_test_results.csv'
+    
+
     for ep in range(args.num_epochs):
         logging.info(f'epoch {ep+1} start train')
         train_loss = train(train_data_loader, model, criterion, optimizer, scheduler)

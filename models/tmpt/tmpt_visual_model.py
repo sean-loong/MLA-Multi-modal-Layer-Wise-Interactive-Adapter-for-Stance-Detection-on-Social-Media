@@ -13,11 +13,15 @@ class TMPTVisualModel(nn.Module):
         self.args = args
         self.config = AutoConfig.from_pretrained(args.visual_transformer_name)
         self.visual_plm = AutoModel.from_pretrained(args.visual_transformer_name, self.config)
+        
+        
         self.visual_soft_tokens = args.visual_soft_tokens
+        # 要插入的 soft prompt token 数量
         self.hidden_size = self.config.hidden_size
-
+        # 视觉模型每个 token 的向量维度（如 768）
         self.soft_prompt_dropout = Dropout(args.visual_soft_prompt_dropout)
-
+        # dropout 防止 prompt overfit
+        
         val = math.sqrt(6. / float(self.hidden_size * 2))
         self.soft_prompt_embeds = nn.Parameter(torch.zeros(1, self.visual_soft_tokens, self.hidden_size))
         # xavier_uniform initialization
@@ -25,12 +29,13 @@ class TMPTVisualModel(nn.Module):
 
     def incorporate_prompt(self, pixel_values):
         # combine prompt embeddings with text embeddings
-        batch_size = pixel_values.shape[0]
-        x = self.visual_plm.embeddings(pixel_values)  # (batch_size, sen len, hidden_dim)
+        batch_size = pixel_values.shape[0] # (batch_size, 3, 224, 224)
+        x = self.visual_plm.embeddings(pixel_values)  # x.shape == [batch_size, L, hidden_size]
+        # L = 1 + N_patch，第一个 token 是 [CLS]
         x = torch.cat((
-                x[:, :1, :],
+                x[:, :1, :], # CLS token: shape [B, 1, H]
                 self.soft_prompt_dropout(self.soft_prompt_embeds.expand(batch_size, -1, -1)),
-                x[:, 1:, :]
+                x[:, 1:, :]  # patch tokens: shape [B, L-1, H]
             ), dim=1)
         
         return x
