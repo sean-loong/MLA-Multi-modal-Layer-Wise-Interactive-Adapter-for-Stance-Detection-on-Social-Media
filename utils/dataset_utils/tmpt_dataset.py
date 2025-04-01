@@ -10,6 +10,10 @@ from openprompt.plms.mlm import MLMTokenizerWrapper
 from openprompt.prompts import ManualTemplate
 
 
+import torch.nn.functional as F
+from torch.nn.utils.rnn import pad_sequence
+
+
 class TMPTAutoDataset(Dataset):
     def __init__(self):
         super().__init__()
@@ -19,21 +23,75 @@ class TMPTAutoDataset(Dataset):
         self.encodings = self.tmpt_text_prompting_encode(textual_tokenizer, sentences, targets)
         self.encodings.update(image_processor(images=images, return_tensors='pt'))
         self.encodings['classification_label'] = torch.tensor(self.labels)
+    # def encode_datas(self, tokenizer, sentences, targets, images):
+    #     textual_tokenizer, image_processor = tokenizer
+    #     # 文本部分
+    #     self.encodings = self.tmpt_text_prompting_encode(textual_tokenizer, sentences, targets)
 
+    #     # 图像部分（确保 image list → Tensor）
+    #     image_tensor = image_processor(images=images, return_tensors='pt')['pixel_values']  # e.g. [B, 3, 224, 224]
+    #     self.encodings['pixel_values'] = image_tensor
+
+    #     # 标签部分
+    #     self.encodings['classification_label'] = torch.tensor(self.labels, dtype=torch.long)
+
+
+    # def tmpt_text_prompting_encode(self, textual_tokenizer, sentences, targets):
+    #     template_text = '{"placeholder":"text_a", "shortenable": True}. {"placeholder":"text_b", "shortenable": False} {"mask"}.'
+    #     prompting_template = ManualTemplate(tokenizer=textual_tokenizer, text=template_text)
+    #     wrapped_tokenizer = MLMTokenizerWrapper(max_seq_length=textual_tokenizer.model_max_length, tokenizer=textual_tokenizer, truncate_method="tail")
+    #     input_ids = []
+    #     loss_ids = []
+    #     attention_mask = []
+    #     for sentence, target in zip(sentences, targets):
+    #         prompting_data = InputExample(text_a=sentence, text_b=target)
+    #         encoding = wrapped_tokenizer.tokenize_one_example(prompting_template.wrap_one_example(prompting_data), teacher_forcing=False)
+    #         input_ids.append(encoding['input_ids'])
+    #         loss_ids.append(encoding['loss_ids'])
+    #         attention_mask.append(encoding['attention_mask'])
+    #     return {'input_ids': torch.tensor(input_ids), 'text_loss_ids': torch.tensor(loss_ids), 'attention_mask': torch.tensor(attention_mask)}
     def tmpt_text_prompting_encode(self, textual_tokenizer, sentences, targets):
         template_text = '{"placeholder":"text_a", "shortenable": True}. {"placeholder":"text_b", "shortenable": False} {"mask"}.'
         prompting_template = ManualTemplate(tokenizer=textual_tokenizer, text=template_text)
-        wrapped_tokenizer = MLMTokenizerWrapper(max_seq_length=textual_tokenizer.model_max_length, tokenizer=textual_tokenizer, truncate_method="tail")
-        input_ids = []
-        loss_ids = []
-        attention_mask = []
+        wrapped_tokenizer = MLMTokenizerWrapper(
+            max_seq_length=textual_tokenizer.model_max_length,
+            tokenizer=textual_tokenizer,
+            truncate_method="tail"
+        )
+
+        input_ids, loss_ids, attention_mask = [], [], []
+
         for sentence, target in zip(sentences, targets):
             prompting_data = InputExample(text_a=sentence, text_b=target)
-            encoding = wrapped_tokenizer.tokenize_one_example(prompting_template.wrap_one_example(prompting_data), teacher_forcing=False)
-            input_ids.append(encoding['input_ids'])
-            loss_ids.append(encoding['loss_ids'])
-            attention_mask.append(encoding['attention_mask'])
-        return {'input_ids': torch.tensor(input_ids), 'text_loss_ids': torch.tensor(loss_ids), 'attention_mask': torch.tensor(attention_mask)}
+            encoding = wrapped_tokenizer.tokenize_one_example(
+                prompting_template.wrap_one_example(prompting_data),
+                teacher_forcing=False
+            )
+            input_ids.append(torch.tensor(encoding['input_ids'], dtype=torch.long))
+            loss_ids.append(torch.tensor(encoding['loss_ids'], dtype=torch.long))
+            attention_mask.append(torch.tensor(encoding['attention_mask'], dtype=torch.long))
+
+        max_len = textual_tokenizer.model_max_length
+
+        input_ids = pad_sequence(input_ids, batch_first=True, padding_value=textual_tokenizer.pad_token_id)
+        attention_mask = pad_sequence(attention_mask, batch_first=True, padding_value=0)
+        loss_ids = pad_sequence(loss_ids, batch_first=True, padding_value=0)
+
+        if input_ids.size(1) < max_len:
+            pad_len = max_len - input_ids.size(1)
+            input_ids = F.pad(input_ids, (0, pad_len), value=textual_tokenizer.pad_token_id)
+            attention_mask = F.pad(attention_mask, (0, pad_len), value=0)
+            loss_ids = F.pad(loss_ids, (0, pad_len), value=0)
+        elif input_ids.size(1) > max_len:
+            input_ids = input_ids[:, :max_len]
+            attention_mask = attention_mask[:, :max_len]
+            loss_ids = loss_ids[:, :max_len]
+
+        return {
+            'input_ids': input_ids,
+            'text_loss_ids': loss_ids,
+            'attention_mask': attention_mask
+        }
 
     def __getitem__(self, item):
         return {k: v[item] for k, v in self.encodings.items()}

@@ -18,6 +18,6 @@ class MTSEConfig():
         'Joe Biden': 'The stance on Joe Biden is:'
     }
 
-    data_dir = 'dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020'
-    in_target_data_dir = f'{data_dir}/in-target'
-    zero_shot_data_dir = f'{data_dir}/zero-shot'
+    data_dir = 'dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE'
+    in_target_data_dir = f'{data_dir}/in_target'
+    zero_shot_data_dir = f'{data_dir}/zero_shot'

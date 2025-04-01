@@ -21,6 +21,8 @@ datasets = {
     'textual': TextualDataset,
     'visual': VisualDataset,
     'multimodal': MultiModalDataset,
+    
     'tmpt': TMPTDataset,
+    'adaptered_tmpt': TMPTDataset,
     'tmpt_gpt_cot': TMPTDataset,
 }

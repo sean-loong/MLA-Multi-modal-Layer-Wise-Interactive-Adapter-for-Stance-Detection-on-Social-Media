@@ -5,3 +5,4 @@ from models.multimodal_transformer import MultiModalTransformerModel
 from models.clip import ClipModel
 from models.vilt import ViltModel
 from models.tmpt.tmpt_model import TMPTModel
+from models.tmpt.adaptered_tmpt_model import adaptered_TMPTModel
