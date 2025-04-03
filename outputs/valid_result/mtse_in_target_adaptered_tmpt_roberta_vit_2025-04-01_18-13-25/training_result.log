@@ -1,0 +1,1200 @@
+2025-04-01_18:13:25 - INFO - new_run_tmpt.py      : 527 line - pid: 54204
+2025-04-01_18:13:25 - INFO - new_run_tmpt.py      : 402 line - Using cuda device gpu: 0
+2025-04-01_18:13:25 - INFO - new_run_tmpt.py      : 404 line - Saving into directory /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25
+2025-04-01_18:13:25 - INFO - new_run_tmpt.py      : 418 line - preparing data...
+2025-04-01_18:14:06 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:1
+2025-04-01_18:14:06 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_18:14:13 - INFO - tmpt_dataset.py      : 163 line - loading data 797 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/train.csv
+2025-04-01_18:14:13 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 125 Against: 614 Neutral: 58
+2025-04-01_18:14:20 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:14:20 - INFO - tmpt_dataset.py      : 163 line - loading data 96 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/valid.csv
+2025-04-01_18:14:20 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 18 Against: 70 Neutral: 8
+2025-04-01_18:14:21 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:14:23 - INFO - tmpt_dataset.py      : 163 line - loading data 233 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/test.csv
+2025-04-01_18:14:23 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 44 Against: 167 Neutral: 22
+2025-04-01_18:14:24 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:14:24 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_18:15:06 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_18:15:06 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_18:15:20 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_18:15:34 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.84815, valid_loss 0.79795, test_loss 0.80910
+2025-04-01_18:15:34 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.00000, f1 37.66234, precision 50.27473, recall 38.41270
+2025-04-01_18:15:34 - INFO - new_run_tmpt.py      : 378 line - test: acc 70.81545, f1 32.83861, precision 60.76865, recall 35.36563, now best_f1 32.83861
+2025-04-01_18:15:34 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_18:15:49 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_18:16:03 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.49363, valid_loss 1.12223, test_loss 1.04209
+2025-04-01_18:16:03 - INFO - new_run_tmpt.py      : 377 line - valid: acc 55.20833, f1 48.02005, precision 51.26207, recall 60.63492
+2025-04-01_18:16:03 - INFO - new_run_tmpt.py      : 378 line - test: acc 53.64807, f1 48.46504, precision 50.58251, recall 60.46543, now best_f1 48.46504
+2025-04-01_18:16:03 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_18:16:18 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_18:16:32 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.35410, valid_loss 0.52159, test_loss 0.58639
+2025-04-01_18:16:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 53.28554, precision 55.51437, recall 52.75132
+2025-04-01_18:16:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.25322, f1 48.15732, precision 65.54693, recall 46.72927, now best_f1 48.15732
+2025-04-01_18:16:32 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_18:16:48 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_18:17:03 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.22067, valid_loss 0.89441, test_loss 0.89029
+2025-04-01_18:17:03 - INFO - new_run_tmpt.py      : 377 line - valid: acc 67.70833, f1 57.76040, precision 56.60317, recall 67.28836
+2025-04-01_18:17:03 - INFO - new_run_tmpt.py      : 378 line - test: acc 66.95279, f1 60.27620, precision 60.49814, recall 70.04173, now best_f1 60.27620
+2025-04-01_18:17:03 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_18:17:18 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_18:17:32 - INFO - new_run_tmpt.py      : 366 line - Best model acc 79.39914, f1 54.21248, precision 65.07143, recall 56.65487
+2025-04-01_18:17:32 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_18:17:32 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.15618, valid_loss 0.56765, test_loss 0.60780
+2025-04-01_18:17:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.20833, f1 58.70836, precision 61.43121, recall 59.61640
+2025-04-01_18:17:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.39914, f1 54.21248, precision 65.07143, recall 56.65487, now best_f1 54.21248
+2025-04-01_18:17:32 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_18:17:47 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_18:18:07 - INFO - new_run_tmpt.py      : 366 line - Best model acc 81.11588, f1 61.18421, precision 69.00470, recall 58.05208
+2025-04-01_18:18:07 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_18:18:07 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.09017, valid_loss 0.50009, test_loss 0.54092
+2025-04-01_18:18:07 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 77.03108, precision 78.92935, recall 75.38360
+2025-04-01_18:18:07 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.11588, f1 61.18421, precision 69.00470, recall 58.05208, now best_f1 61.18421
+2025-04-01_18:18:07 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_18:18:22 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_18:18:37 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.05893, valid_loss 0.66526, test_loss 0.53913
+2025-04-01_18:18:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.20833, f1 72.93536, precision 69.78836, recall 80.38360
+2025-04-01_18:18:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.54506, f1 63.24639, precision 63.87800, recall 62.91508, now best_f1 61.18421
+2025-04-01_18:18:37 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_18:18:52 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_18:19:08 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.04821, valid_loss 0.54023, test_loss 0.62714
+2025-04-01_18:19:08 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 65.17427, precision 73.85807, recall 62.88360
+2025-04-01_18:19:08 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 60.13885, precision 78.98371, recall 56.77735, now best_f1 61.18421
+2025-04-01_18:19:08 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_18:19:23 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_18:19:38 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.03800, valid_loss 0.95364, test_loss 0.94335
+2025-04-01_18:19:38 - INFO - new_run_tmpt.py      : 377 line - valid: acc 70.83333, f1 57.68213, precision 55.79788, recall 64.08730
+2025-04-01_18:19:38 - INFO - new_run_tmpt.py      : 378 line - test: acc 70.81545, f1 56.78742, precision 55.88338, recall 62.03048, now best_f1 61.18421
+2025-04-01_18:19:38 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_18:19:54 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_18:20:09 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.05477, valid_loss 0.57766, test_loss 0.59298
+2025-04-01_18:20:09 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 69.92692, precision 77.03076, recall 67.05026
+2025-04-01_18:20:09 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.69099, f1 62.22434, precision 73.03392, recall 61.28198, now best_f1 61.18421
+2025-04-01_18:20:09 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_18:20:25 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_18:20:39 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.03200, valid_loss 0.56618, test_loss 0.55959
+2025-04-01_18:20:39 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 70.26455, precision 70.26455, recall 70.26455
+2025-04-01_18:20:39 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.69099, f1 67.61485, precision 71.27067, recall 65.42823, now best_f1 61.18421
+2025-04-01_18:20:39 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_18:20:54 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_18:21:08 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02375, valid_loss 0.55696, test_loss 0.57638
+2025-04-01_18:21:08 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 71.77340, precision 79.82353, recall 68.00265
+2025-04-01_18:21:08 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 62.62278, precision 68.92431, recall 60.32480, now best_f1 61.18421
+2025-04-01_18:21:08 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_18:21:23 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_18:21:37 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02302, valid_loss 0.57593, test_loss 0.58218
+2025-04-01_18:21:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 70.23911, precision 74.76948, recall 67.52646
+2025-04-01_18:21:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 62.67443, precision 66.70912, recall 60.88278, now best_f1 61.18421
+2025-04-01_18:21:37 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_18:21:52 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_18:22:06 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02308, valid_loss 0.56446, test_loss 0.58047
+2025-04-01_18:22:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 65.75807, precision 71.04575, recall 63.35979
+2025-04-01_18:22:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.83262, f1 63.01360, precision 70.80232, recall 60.52441, now best_f1 61.18421
+2025-04-01_18:22:06 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_18:22:22 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_18:22:36 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.02163, valid_loss 0.57902, test_loss 0.60012
+2025-04-01_18:22:36 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 67.02010, precision 76.65979, recall 63.83598
+2025-04-01_18:22:36 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.83262, f1 62.80415, precision 71.16159, recall 59.96643, now best_f1 61.18421
+2025-04-01_18:22:36 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_18:22:52 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_18:23:06 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.01899, valid_loss 0.58342, test_loss 0.59459
+2025-04-01_18:23:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 67.02010, precision 76.65979, recall 63.83598
+2025-04-01_18:23:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.83262, f1 63.01360, precision 70.80232, recall 60.52441, now best_f1 61.18421
+2025-04-01_18:23:06 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_18:23:21 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_18:23:36 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01827, valid_loss 0.57404, test_loss 0.59958
+2025-04-01_18:23:36 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 72.29385, precision 81.03070, recall 68.00265
+2025-04-01_18:23:36 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 62.40963, precision 70.44751, recall 59.76683, now best_f1 61.18421
+2025-04-01_18:23:36 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_18:23:52 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_18:24:07 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01692, valid_loss 0.58588, test_loss 0.60144
+2025-04-01_18:24:07 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 67.02010, precision 76.65979, recall 63.83598
+2025-04-01_18:24:07 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 62.40963, precision 70.44751, recall 59.76683, now best_f1 61.18421
+2025-04-01_18:24:07 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_18:24:23 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_18:24:37 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01544, valid_loss 0.59437, test_loss 0.60349
+2025-04-01_18:24:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 65.75807, precision 71.04575, recall 63.35979
+2025-04-01_18:24:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.97425, f1 61.88078, precision 65.87579, recall 60.12520, now best_f1 61.18421
+2025-04-01_18:24:37 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_18:24:53 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01728, valid_loss 0.59078, test_loss 0.59988
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 65.75807, precision 71.04575, recall 63.35979
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.83262, f1 63.01360, precision 70.80232, recall 60.52441, now best_f1 61.18421
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 380 line - Best model acc 81.11588, f1 61.18421, precision 69.00470, recall 58.05208
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_DT_fold_0_61.18421_04-01-18-18.csv
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 445 line - target "DT" fold 1 train finish, acc:81.11588, f1:61.18421, precision:69.00470, recall:58.05208
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:2
+2025-04-01_18:25:06 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_18:25:14 - INFO - tmpt_dataset.py      : 163 line - loading data 797 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/train.csv
+2025-04-01_18:25:14 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 125 Against: 614 Neutral: 58
+2025-04-01_18:25:20 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:25:21 - INFO - tmpt_dataset.py      : 163 line - loading data 96 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/valid.csv
+2025-04-01_18:25:21 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 18 Against: 70 Neutral: 8
+2025-04-01_18:25:22 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:25:23 - INFO - tmpt_dataset.py      : 163 line - loading data 233 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/test.csv
+2025-04-01_18:25:23 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 44 Against: 167 Neutral: 22
+2025-04-01_18:25:25 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:25:25 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_18:26:07 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_18:26:07 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_18:26:22 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_18:26:39 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.98029, valid_loss 0.87274, test_loss 0.88864
+2025-04-01_18:26:39 - INFO - new_run_tmpt.py      : 377 line - valid: acc 69.79167, f1 46.62393, precision 45.00000, recall 51.16402
+2025-04-01_18:26:39 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.24464, f1 49.54738, precision 49.59970, recall 51.38813, now best_f1 49.54738
+2025-04-01_18:26:39 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_18:26:55 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_18:27:11 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.58091, valid_loss 0.58199, test_loss 0.59815
+2025-04-01_18:27:11 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 53.80891, precision 51.81135, recall 55.97884
+2025-04-01_18:27:11 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.54077, f1 50.56521, precision 48.12555, recall 53.26619, now best_f1 50.56521
+2025-04-01_18:27:11 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_18:27:26 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_18:27:41 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.32312, valid_loss 0.58944, test_loss 0.64711
+2025-04-01_18:27:41 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 67.60684, precision 70.63492, recall 66.57407
+2025-04-01_18:27:41 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 57.15750, precision 66.01987, recall 58.17002, now best_f1 57.15750
+2025-04-01_18:27:41 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_18:27:57 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_18:28:12 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.20380, valid_loss 0.53970, test_loss 0.53594
+2025-04-01_18:28:12 - INFO - new_run_tmpt.py      : 377 line - valid: acc 79.16667, f1 58.89640, precision 64.03846, recall 56.89153
+2025-04-01_18:28:12 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 56.13658, precision 64.46581, recall 53.34785, now best_f1 57.15750
+2025-04-01_18:28:12 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_18:28:28 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_18:28:43 - INFO - new_run_tmpt.py      : 366 line - Best model acc 78.54077, f1 62.30636, precision 66.67019, recall 61.15950
+2025-04-01_18:28:43 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_18:28:43 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.15234, valid_loss 0.57647, test_loss 0.71900
+2025-04-01_18:28:43 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 74.11255, precision 77.39278, recall 71.69312
+2025-04-01_18:28:43 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.54077, f1 62.30636, precision 66.67019, recall 61.15950, now best_f1 62.30636
+2025-04-01_18:28:43 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_18:28:59 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_18:29:13 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.10183, valid_loss 0.58335, test_loss 0.58542
+2025-04-01_18:29:13 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.66835, precision 70.23166, recall 65.67460
+2025-04-01_18:29:13 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.11588, f1 62.40807, precision 66.02156, recall 63.07385, now best_f1 62.30636
+2025-04-01_18:29:13 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_18:29:29 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_18:29:43 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.08389, valid_loss 0.56132, test_loss 0.55689
+2025-04-01_18:29:43 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 68.32712, precision 73.87612, recall 64.77513
+2025-04-01_18:29:43 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.97425, f1 61.98449, precision 73.29599, recall 58.45128, now best_f1 62.30636
+2025-04-01_18:29:43 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_18:29:58 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_18:30:12 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.05716, valid_loss 0.58486, test_loss 0.62136
+2025-04-01_18:30:12 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 67.12963, precision 70.39039, recall 66.13757
+2025-04-01_18:30:12 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.11588, f1 64.98677, precision 69.89982, recall 61.99873, now best_f1 62.30636
+2025-04-01_18:30:12 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_18:30:27 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_18:30:42 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.04736, valid_loss 0.91214, test_loss 0.89360
+2025-04-01_18:30:42 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.08333, f1 50.14294, precision 73.06492, recall 46.74603
+2025-04-01_18:30:42 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.53648, f1 44.39015, precision 86.86739, recall 42.42424, now best_f1 62.30636
+2025-04-01_18:30:42 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_18:30:57 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_18:31:12 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.09308, valid_loss 0.70686, test_loss 0.88945
+2025-04-01_18:31:12 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.08333, f1 62.02617, precision 62.92308, recall 62.81746
+2025-04-01_18:31:12 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.67382, f1 55.17944, precision 65.39766, recall 57.00871, now best_f1 62.30636
+2025-04-01_18:31:12 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_18:31:28 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_18:31:42 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.05916, valid_loss 0.66781, test_loss 0.73359
+2025-04-01_18:31:42 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 72.63466, precision 76.07407, recall 71.25661
+2025-04-01_18:31:42 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 61.18608, precision 67.81618, recall 57.81165, now best_f1 62.30636
+2025-04-01_18:31:42 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_18:31:58 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_18:32:14 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.03238, valid_loss 0.62522, test_loss 0.72304
+2025-04-01_18:32:14 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 67.17172, precision 68.56925, recall 66.13757
+2025-04-01_18:32:14 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.39485, f1 57.87244, precision 63.16658, recall 56.05607, now best_f1 62.30636
+2025-04-01_18:32:14 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_18:32:29 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_18:32:43 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.03174, valid_loss 0.63200, test_loss 0.65999
+2025-04-01_18:32:43 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 74.04408, precision 76.09658, recall 74.94709
+2025-04-01_18:32:43 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 58.86671, precision 65.18375, recall 55.73852, now best_f1 62.30636
+2025-04-01_18:32:43 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_18:32:58 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_18:33:12 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02647, valid_loss 0.60769, test_loss 0.70427
+2025-04-01_18:33:12 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 69.86828, precision 70.56878, recall 70.30423
+2025-04-01_18:33:12 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 60.37588, precision 63.92216, recall 58.52840, now best_f1 62.30636
+2025-04-01_18:33:12 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_18:33:27 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_18:33:41 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.02357, valid_loss 0.61672, test_loss 0.72849
+2025-04-01_18:33:41 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 73.07444, precision 73.91544, recall 74.47090
+2025-04-01_18:33:41 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 61.25226, precision 64.31583, recall 59.84395, now best_f1 62.30636
+2025-04-01_18:33:41 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_18:33:57 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_18:34:10 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.02368, valid_loss 0.62255, test_loss 0.76804
+2025-04-01_18:34:10 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 68.98059, precision 68.93584, recall 69.82804
+2025-04-01_18:34:10 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.39485, f1 58.39085, precision 61.03728, recall 57.72999, now best_f1 62.30636
+2025-04-01_18:34:10 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_18:34:25 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_18:34:38 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.02402, valid_loss 0.61329, test_loss 0.76197
+2025-04-01_18:34:38 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 72.34650, precision 73.05556, recall 72.15608
+2025-04-01_18:34:38 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.82403, f1 58.72123, precision 61.46435, recall 57.92960, now best_f1 62.30636
+2025-04-01_18:34:38 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_18:34:53 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_18:35:06 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.02346, valid_loss 0.62451, test_loss 0.73468
+2025-04-01_18:35:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 68.05556, precision 70.20592, recall 66.61376
+2025-04-01_18:35:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 59.54106, precision 63.69595, recall 57.97042, now best_f1 62.30636
+2025-04-01_18:35:06 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_18:35:21 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_18:35:34 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.02206, valid_loss 0.62704, test_loss 0.72963
+2025-04-01_18:35:34 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.66878, precision 73.88927, recall 70.78042
+2025-04-01_18:35:34 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 58.63606, precision 63.28519, recall 56.65487, now best_f1 62.30636
+2025-04-01_18:35:34 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_18:35:50 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.02297, valid_loss 0.63205, test_loss 0.72546
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 72.63466, precision 76.07407, recall 71.25661
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.39914, f1 61.56458, precision 68.66819, recall 58.21085, now best_f1 62.30636
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 380 line - Best model acc 78.54077, f1 62.30636, precision 66.67019, recall 61.15950
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_DT_fold_1_62.30636_04-01-18-28.csv
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 445 line - target "DT" fold 2 train finish, acc:78.54077, f1:62.30636, precision:66.67019, recall:61.15950
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:3
+2025-04-01_18:36:04 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_18:36:13 - INFO - tmpt_dataset.py      : 163 line - loading data 797 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/train.csv
+2025-04-01_18:36:13 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 125 Against: 614 Neutral: 58
+2025-04-01_18:36:19 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:36:20 - INFO - tmpt_dataset.py      : 163 line - loading data 96 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/valid.csv
+2025-04-01_18:36:20 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 18 Against: 70 Neutral: 8
+2025-04-01_18:36:21 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:36:22 - INFO - tmpt_dataset.py      : 163 line - loading data 233 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/test.csv
+2025-04-01_18:36:22 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 44 Against: 167 Neutral: 22
+2025-04-01_18:36:24 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:36:24 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_18:36:55 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_18:36:55 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_18:37:10 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_18:37:25 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.92258, valid_loss 0.81896, test_loss 0.84641
+2025-04-01_18:37:25 - INFO - new_run_tmpt.py      : 377 line - valid: acc 71.87500, f1 54.84176, precision 53.78788, recall 56.30952
+2025-04-01_18:37:25 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.67382, f1 53.58681, precision 54.82409, recall 52.94411, now best_f1 53.58681
+2025-04-01_18:37:25 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_18:37:40 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_18:37:55 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.51321, valid_loss 0.58180, test_loss 0.57909
+2025-04-01_18:37:55 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.04167, f1 47.16374, precision 55.80720, recall 45.33069
+2025-04-01_18:37:55 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 50.79203, precision 57.66667, recall 48.80240, now best_f1 53.58681
+2025-04-01_18:37:55 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_18:38:09 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_18:38:23 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.30741, valid_loss 0.56535, test_loss 0.58375
+2025-04-01_18:38:23 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.20833, f1 59.39662, precision 62.22046, recall 57.80423
+2025-04-01_18:38:23 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 51.88137, precision 50.70547, recall 53.30702, now best_f1 51.88137
+2025-04-01_18:38:23 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_18:38:38 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_18:38:51 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.19005, valid_loss 0.55950, test_loss 0.59761
+2025-04-01_18:38:51 - INFO - new_run_tmpt.py      : 377 line - valid: acc 86.45833, f1 74.52328, precision 82.92345, recall 70.35714
+2025-04-01_18:38:51 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 56.33296, precision 63.37486, recall 53.30702, now best_f1 56.33296
+2025-04-01_18:38:51 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_18:39:07 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_18:39:20 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.13775, valid_loss 0.66560, test_loss 0.64627
+2025-04-01_18:39:20 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 60.03874, precision 70.98765, recall 58.78307
+2025-04-01_18:39:20 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.53648, f1 47.32379, precision 59.95798, recall 45.01452, now best_f1 56.33296
+2025-04-01_18:39:20 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_18:39:35 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_18:39:48 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.08760, valid_loss 0.62463, test_loss 0.58126
+2025-04-01_18:39:48 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.90848, precision 77.11039, recall 69.40476
+2025-04-01_18:39:48 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.11588, f1 60.92617, precision 70.53346, recall 57.49410, now best_f1 56.33296
+2025-04-01_18:39:48 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_18:40:02 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_18:40:15 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.06979, valid_loss 0.63369, test_loss 0.60377
+2025-04-01_18:40:15 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 68.47357, precision 73.05511, recall 69.39153
+2025-04-01_18:40:15 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.39914, f1 61.68919, precision 66.63664, recall 58.76883, now best_f1 56.33296
+2025-04-01_18:40:15 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_18:40:29 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_18:40:42 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.04822, valid_loss 0.57142, test_loss 0.65136
+2025-04-01_18:40:42 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 70.69806, precision 69.47311, recall 72.10317
+2025-04-01_18:40:42 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.96996, f1 58.28645, precision 59.26461, recall 58.52840, now best_f1 56.33296
+2025-04-01_18:40:42 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_18:40:57 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_18:41:11 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.04136, valid_loss 0.60539, test_loss 0.64057
+2025-04-01_18:41:11 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 71.67320, precision 71.56881, recall 73.51852
+2025-04-01_18:41:11 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.54077, f1 60.73733, precision 61.96594, recall 59.84395, now best_f1 56.33296
+2025-04-01_18:41:11 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_18:41:26 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_18:41:39 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.03469, valid_loss 0.57255, test_loss 0.60952
+2025-04-01_18:41:39 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 69.42014, precision 73.63601, recall 66.61376
+2025-04-01_18:41:39 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.25751, f1 61.93450, precision 65.32051, recall 60.08438, now best_f1 56.33296
+2025-04-01_18:41:39 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_18:41:54 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_18:42:07 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.02776, valid_loss 0.60975, test_loss 0.61687
+2025-04-01_18:42:07 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 64.95300, precision 72.20944, recall 61.07143
+2025-04-01_18:42:07 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.25751, f1 60.28473, precision 64.76233, recall 58.21085, now best_f1 56.33296
+2025-04-01_18:42:07 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_18:42:23 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_18:42:36 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02947, valid_loss 0.62143, test_loss 0.64544
+2025-04-01_18:42:36 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 68.62670, precision 69.95921, recall 69.35185
+2025-04-01_18:42:36 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.96996, f1 61.04235, precision 62.74788, recall 60.04355, now best_f1 56.33296
+2025-04-01_18:42:36 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_18:42:51 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_18:43:05 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02555, valid_loss 0.61513, test_loss 0.64149
+2025-04-01_18:43:05 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 64.51907, precision 68.43551, recall 61.97090
+2025-04-01_18:43:05 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 60.13625, precision 63.87524, recall 58.56923, now best_f1 56.33296
+2025-04-01_18:43:05 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_18:43:20 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_18:43:34 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02705, valid_loss 0.64359, test_loss 0.62721
+2025-04-01_18:43:34 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 64.45431, precision 74.65021, recall 59.69577
+2025-04-01_18:43:34 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.83262, f1 63.02626, precision 73.39244, recall 59.96643, now best_f1 56.33296
+2025-04-01_18:43:34 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_18:43:49 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_18:44:03 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.02495, valid_loss 0.62716, test_loss 0.67126
+2025-04-01_18:44:03 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 67.12963, precision 69.30502, recall 65.66138
+2025-04-01_18:44:03 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.96996, f1 59.95584, precision 60.90102, recall 59.84395, now best_f1 56.33296
+2025-04-01_18:44:03 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_18:44:18 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_18:44:32 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.02378, valid_loss 0.63228, test_loss 0.65049
+2025-04-01_18:44:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 66.68812, precision 73.07692, recall 62.92328
+2025-04-01_18:44:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 58.41248, precision 61.78236, recall 57.25367, now best_f1 56.33296
+2025-04-01_18:44:32 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_18:44:47 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_18:45:00 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.02220, valid_loss 0.62787, test_loss 0.64762
+2025-04-01_18:45:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 65.48753, precision 70.63492, recall 62.44709
+2025-04-01_18:45:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.25751, f1 60.54908, precision 63.86865, recall 59.32680, now best_f1 56.33296
+2025-04-01_18:45:00 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_18:45:15 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_18:45:29 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.02076, valid_loss 0.62936, test_loss 0.66609
+2025-04-01_18:45:29 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 64.79941, precision 68.98496, recall 61.97090
+2025-04-01_18:45:29 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 60.20362, precision 62.83134, recall 59.12720, now best_f1 56.33296
+2025-04-01_18:45:29 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_18:45:44 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_18:45:58 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.02129, valid_loss 0.63287, test_loss 0.67063
+2025-04-01_18:45:58 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 68.49617, precision 71.74603, recall 66.13757
+2025-04-01_18:45:58 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.54077, f1 59.17951, precision 60.63203, recall 58.52840, now best_f1 56.33296
+2025-04-01_18:45:58 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_18:46:13 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01794, valid_loss 0.62913, test_loss 0.66914
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 65.72306, precision 70.87912, recall 62.44709
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 60.20362, precision 62.83134, recall 59.12720, now best_f1 56.33296
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 380 line - Best model acc 78.11159, f1 56.33296, precision 63.37486, recall 53.30702
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_DT_fold_2_56.33296_04-01-18-38.csv
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 445 line - target "DT" fold 3 train finish, acc:78.11159, f1:56.33296, precision:63.37486, recall:53.30702
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:4
+2025-04-01_18:46:27 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_18:46:35 - INFO - tmpt_dataset.py      : 163 line - loading data 797 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/train.csv
+2025-04-01_18:46:35 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 125 Against: 614 Neutral: 58
+2025-04-01_18:46:42 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:46:43 - INFO - tmpt_dataset.py      : 163 line - loading data 96 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/valid.csv
+2025-04-01_18:46:43 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 18 Against: 70 Neutral: 8
+2025-04-01_18:46:43 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:46:45 - INFO - tmpt_dataset.py      : 163 line - loading data 233 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/test.csv
+2025-04-01_18:46:45 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 44 Against: 167 Neutral: 22
+2025-04-01_18:46:47 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:46:47 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_18:47:28 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_18:47:28 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_18:47:42 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_18:47:58 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.82080, valid_loss 0.75021, test_loss 0.75927
+2025-04-01_18:47:58 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.25000, f1 50.46358, precision 53.39506, recall 49.52381
+2025-04-01_18:47:58 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.96567, f1 50.26699, precision 54.57393, recall 49.11994, now best_f1 50.26699
+2025-04-01_18:47:58 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_18:48:13 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_18:48:28 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.48004, valid_loss 0.63161, test_loss 0.59250
+2025-04-01_18:48:28 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.08333, f1 46.54878, precision 66.43678, recall 44.43122
+2025-04-01_18:48:28 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.53648, f1 50.50050, precision 62.71552, recall 47.64562, now best_f1 50.26699
+2025-04-01_18:48:28 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_18:48:43 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_18:48:57 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.29986, valid_loss 0.52076, test_loss 0.55540
+2025-04-01_18:48:57 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.20833, f1 49.05245, precision 56.06641, recall 47.67196
+2025-04-01_18:48:57 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.96996, f1 49.61134, precision 86.54179, recall 47.52767, now best_f1 50.26699
+2025-04-01_18:48:57 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_18:49:12 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_18:49:25 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.17946, valid_loss 0.59405, test_loss 0.63897
+2025-04-01_18:49:25 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.20833, f1 52.86920, precision 76.51515, recall 48.61111
+2025-04-01_18:49:25 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 45.69041, precision 52.61006, recall 45.05534, now best_f1 45.69041
+2025-04-01_18:49:25 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_18:49:41 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_18:49:56 - INFO - new_run_tmpt.py      : 366 line - Best model acc 75.96567, f1 56.89089, precision 58.25920, recall 55.85647
+2025-04-01_18:49:56 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_18:49:56 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.14925, valid_loss 0.47980, test_loss 0.58944
+2025-04-01_18:49:56 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 70.24227, precision 70.07215, recall 71.67989
+2025-04-01_18:49:56 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.96567, f1 56.89089, precision 58.25920, recall 55.85647, now best_f1 56.89089
+2025-04-01_18:49:56 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_18:50:12 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_18:50:26 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.07569, valid_loss 0.54299, test_loss 0.67432
+2025-04-01_18:50:26 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 69.32447, precision 72.89961, recall 67.52646
+2025-04-01_18:50:26 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 57.00529, precision 63.13109, recall 57.61205, now best_f1 56.89089
+2025-04-01_18:50:26 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_18:50:41 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_18:50:55 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.04729, valid_loss 0.56831, test_loss 0.68635
+2025-04-01_18:50:55 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 64.39038, precision 72.48677, recall 62.88360
+2025-04-01_18:50:55 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.39914, f1 56.29607, precision 62.46442, recall 56.85447, now best_f1 56.89089
+2025-04-01_18:50:55 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_18:51:10 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_18:51:25 - INFO - new_run_tmpt.py      : 366 line - Best model acc 79.39914, f1 58.72420, precision 60.85291, recall 58.17002
+2025-04-01_18:51:25 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_18:51:25 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.04168, valid_loss 0.46309, test_loss 0.65921
+2025-04-01_18:51:25 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 75.38360, precision 75.38360, recall 75.38360
+2025-04-01_18:51:25 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.39914, f1 58.72420, precision 60.85291, recall 58.17002, now best_f1 58.72420
+2025-04-01_18:51:25 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_18:51:40 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_18:51:56 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.03483, valid_loss 0.51767, test_loss 0.70139
+2025-04-01_18:51:56 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.61467, precision 76.00000, recall 68.46561
+2025-04-01_18:51:56 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 54.52438, precision 58.47363, recall 52.70822, now best_f1 58.72420
+2025-04-01_18:51:56 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_18:52:11 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_18:52:25 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.02620, valid_loss 0.56737, test_loss 0.71682
+2025-04-01_18:52:25 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.29807, precision 72.25000, recall 64.29894
+2025-04-01_18:52:25 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.82403, f1 53.61596, precision 56.42915, recall 52.86699, now best_f1 58.72420
+2025-04-01_18:52:25 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_18:52:40 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_18:52:54 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.02548, valid_loss 0.52871, test_loss 0.71381
+2025-04-01_18:52:55 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 66.17658, precision 71.31202, recall 62.92328
+2025-04-01_18:52:55 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.54077, f1 54.67314, precision 59.51128, recall 53.10742, now best_f1 58.72420
+2025-04-01_18:52:55 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_18:53:10 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_18:53:24 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02358, valid_loss 0.53103, test_loss 0.70730
+2025-04-01_18:53:24 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 72.55789, precision 77.79866, recall 68.94180
+2025-04-01_18:53:24 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.25322, f1 53.91380, precision 56.78443, recall 52.50862, now best_f1 58.72420
+2025-04-01_18:53:24 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_18:53:39 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_18:53:53 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02390, valid_loss 0.55483, test_loss 0.71436
+2025-04-01_18:53:53 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.29807, precision 72.25000, recall 64.29894
+2025-04-01_18:53:53 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 55.28134, precision 57.34007, recall 55.13972, now best_f1 58.72420
+2025-04-01_18:53:53 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_18:54:08 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_18:54:22 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.01967, valid_loss 0.55725, test_loss 0.74590
+2025-04-01_18:54:22 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 63.37960, precision 74.72373, recall 59.23280
+2025-04-01_18:54:22 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 55.47976, precision 64.60400, recall 53.70622, now best_f1 58.72420
+2025-04-01_18:54:22 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_18:54:37 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_18:54:52 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.01962, valid_loss 0.52946, test_loss 0.72391
+2025-04-01_18:54:52 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.61467, precision 76.00000, recall 68.46561
+2025-04-01_18:54:52 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.25322, f1 54.09276, precision 56.86107, recall 53.06659, now best_f1 58.72420
+2025-04-01_18:54:52 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_18:55:07 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_18:55:21 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.02027, valid_loss 0.54825, test_loss 0.74630
+2025-04-01_18:55:21 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 68.68677, precision 75.19481, recall 64.77513
+2025-04-01_18:55:21 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.54077, f1 54.56269, precision 60.04038, recall 53.10742, now best_f1 58.72420
+2025-04-01_18:55:21 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_18:55:36 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_18:55:51 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01723, valid_loss 0.55681, test_loss 0.74014
+2025-04-01_18:55:51 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.61467, precision 76.00000, recall 68.46561
+2025-04-01_18:55:51 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.11159, f1 54.30400, precision 58.81834, recall 52.90782, now best_f1 58.72420
+2025-04-01_18:55:51 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_18:56:07 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_18:56:20 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01499, valid_loss 0.56502, test_loss 0.75347
+2025-04-01_18:56:20 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.61467, precision 76.00000, recall 68.46561
+2025-04-01_18:56:20 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 53.94076, precision 58.16082, recall 52.70822, now best_f1 58.72420
+2025-04-01_18:56:20 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_18:56:35 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_18:56:49 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01677, valid_loss 0.56582, test_loss 0.74795
+2025-04-01_18:56:49 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.61467, precision 76.00000, recall 68.46561
+2025-04-01_18:56:49 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.25322, f1 55.59921, precision 58.88922, recall 53.82417, now best_f1 58.72420
+2025-04-01_18:56:49 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_18:57:05 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01926, valid_loss 0.56759, test_loss 0.75438
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 71.61467, precision 76.00000, recall 68.46561
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.68240, f1 57.32228, precision 60.94079, recall 55.33932, now best_f1 58.72420
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 380 line - Best model acc 79.39914, f1 58.72420, precision 60.85291, recall 58.17002
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_DT_fold_3_58.72420_04-01-18-51.csv
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 445 line - target "DT" fold 4 train finish, acc:79.39914, f1:58.72420, precision:60.85291, recall:58.17002
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:5
+2025-04-01_18:57:19 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_18:57:26 - INFO - tmpt_dataset.py      : 163 line - loading data 797 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/train.csv
+2025-04-01_18:57:26 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 125 Against: 614 Neutral: 58
+2025-04-01_18:57:33 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:57:34 - INFO - tmpt_dataset.py      : 163 line - loading data 96 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/valid.csv
+2025-04-01_18:57:34 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 18 Against: 70 Neutral: 8
+2025-04-01_18:57:34 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:57:36 - INFO - tmpt_dataset.py      : 163 line - loading data 233 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/DT/test.csv
+2025-04-01_18:57:36 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 44 Against: 167 Neutral: 22
+2025-04-01_18:57:37 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_18:57:38 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_18:58:19 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_18:58:19 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_18:58:34 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_18:58:49 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.83022, valid_loss 1.12524, test_loss 1.04174
+2025-04-01_18:58:49 - INFO - new_run_tmpt.py      : 377 line - valid: acc 38.54167, f1 26.92951, precision 36.85588, recall 41.00529
+2025-04-01_18:58:49 - INFO - new_run_tmpt.py      : 378 line - test: acc 43.34764, f1 30.12157, precision 38.48666, recall 43.03665, now best_f1 30.12157
+2025-04-01_18:58:49 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_18:59:05 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_18:59:20 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.46876, valid_loss 0.50316, test_loss 0.54535
+2025-04-01_18:59:20 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.96388, precision 75.90196, recall 64.29894
+2025-04-01_18:59:20 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 54.24808, precision 58.77094, recall 54.62257, now best_f1 54.24808
+2025-04-01_18:59:20 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_18:59:35 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_18:59:52 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.28715, valid_loss 0.40615, test_loss 0.54674
+2025-04-01_18:59:52 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 66.59247, precision 86.53846, recall 61.98413
+2025-04-01_18:59:52 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.39914, f1 49.71274, precision 51.46386, recall 49.75957, now best_f1 54.24808
+2025-04-01_18:59:52 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_19:00:07 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_19:00:23 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.20272, valid_loss 0.55931, test_loss 0.59639
+2025-04-01_19:00:23 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 70.55300, precision 71.02564, recall 73.51852
+2025-04-01_19:00:23 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.96996, f1 61.36087, precision 65.59270, recall 58.76883, now best_f1 61.36087
+2025-04-01_19:00:23 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_19:00:40 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_19:00:56 - INFO - new_run_tmpt.py      : 366 line - Best model acc 82.40343, f1 64.89494, precision 71.36641, recall 61.83996
+2025-04-01_19:00:56 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:00:56 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.13008, valid_loss 0.49659, test_loss 0.54710
+2025-04-01_19:00:56 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 70.55556, precision 73.22179, recall 68.46561
+2025-04-01_19:00:56 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 64.89494, precision 71.36641, recall 61.83996, now best_f1 64.89494
+2025-04-01_19:00:56 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_19:01:11 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_19:01:27 - INFO - new_run_tmpt.py      : 366 line - Best model acc 83.26180, f1 62.40380, precision 67.80475, recall 62.19833
+2025-04-01_19:01:27 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:01:27 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.09428, valid_loss 0.45949, test_loss 0.51554
+2025-04-01_19:01:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 72.59259, precision 72.59259, recall 72.59259
+2025-04-01_19:01:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.26180, f1 62.40380, precision 67.80475, recall 62.19833, now best_f1 62.40380
+2025-04-01_19:01:27 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_19:01:44 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_19:01:58 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.05466, valid_loss 0.52136, test_loss 0.58504
+2025-04-01_19:01:58 - INFO - new_run_tmpt.py      : 377 line - valid: acc 85.41667, f1 69.03979, precision 79.05303, recall 63.87566
+2025-04-01_19:01:58 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.97425, f1 60.00703, precision 73.52085, recall 57.13573, now best_f1 62.40380
+2025-04-01_19:01:58 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_19:02:14 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_19:02:30 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.05722, valid_loss 0.54013, test_loss 0.54939
+2025-04-01_19:02:30 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 70.83333, precision 70.47619, recall 73.51852
+2025-04-01_19:02:30 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.83262, f1 66.09086, precision 70.18773, recall 63.35511, now best_f1 62.40380
+2025-04-01_19:02:30 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_19:02:45 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_19:03:00 - INFO - new_run_tmpt.py      : 366 line - Best model acc 81.97425, f1 60.79799, precision 65.79505, recall 58.45128
+2025-04-01_19:03:00 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:03:00 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.04744, valid_loss 0.52314, test_loss 0.58747
+2025-04-01_19:03:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 86.45833, f1 73.06122, precision 79.04040, recall 69.41799
+2025-04-01_19:03:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.97425, f1 60.79799, precision 65.79505, recall 58.45128, now best_f1 60.79799
+2025-04-01_19:03:00 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_19:03:16 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_19:03:31 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.03586, valid_loss 0.56619, test_loss 0.61176
+2025-04-01_19:03:31 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 67.13857, precision 73.50427, recall 63.39947
+2025-04-01_19:03:31 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.68670, f1 56.53209, precision 62.79178, recall 54.66340, now best_f1 60.79799
+2025-04-01_19:03:31 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_19:03:46 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_19:04:01 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.03191, valid_loss 0.57871, test_loss 0.62240
+2025-04-01_19:04:01 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.75309, precision 77.01058, recall 63.86243
+2025-04-01_19:04:01 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 57.57294, precision 63.63750, recall 54.66340, now best_f1 60.79799
+2025-04-01_19:04:01 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_19:04:17 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_19:04:32 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02639, valid_loss 0.57295, test_loss 0.60643
+2025-04-01_19:04:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 79.16667, f1 65.77465, precision 67.59259, recall 67.02381
+2025-04-01_19:04:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.40343, f1 66.76706, precision 69.10832, recall 65.38741, now best_f1 60.79799
+2025-04-01_19:04:32 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_19:04:47 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_19:05:01 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02386, valid_loss 0.59060, test_loss 0.62011
+2025-04-01_19:05:01 - INFO - new_run_tmpt.py      : 377 line - valid: acc 84.37500, f1 69.26428, precision 80.24691, recall 64.33862
+2025-04-01_19:05:01 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.68670, f1 56.78958, precision 62.41855, recall 55.22138, now best_f1 60.79799
+2025-04-01_19:05:01 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_19:05:16 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_19:05:30 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.01948, valid_loss 0.58196, test_loss 0.61106
+2025-04-01_19:05:30 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 68.27542, precision 75.29915, recall 65.23810
+2025-04-01_19:05:30 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.68670, f1 58.42901, precision 63.59943, recall 56.53693, now best_f1 60.79799
+2025-04-01_19:05:30 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_19:05:47 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_19:06:00 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.02029, valid_loss 0.64555, test_loss 0.62871
+2025-04-01_19:06:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.75309, precision 77.01058, recall 63.86243
+2025-04-01_19:06:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.25751, f1 58.16620, precision 63.91247, recall 55.42098, now best_f1 60.79799
+2025-04-01_19:06:00 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_19:06:16 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_19:06:31 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.02559, valid_loss 0.63240, test_loss 0.65336
+2025-04-01_19:06:31 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.75309, precision 77.01058, recall 63.86243
+2025-04-01_19:06:31 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.82833, f1 58.26499, precision 63.66481, recall 55.77935, now best_f1 60.79799
+2025-04-01_19:06:31 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_19:06:48 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_19:07:04 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01761, valid_loss 0.59862, test_loss 0.65351
+2025-04-01_19:07:04 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.75309, precision 77.01058, recall 63.86243
+2025-04-01_19:07:04 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.68670, f1 62.13596, precision 65.98464, recall 60.28398, now best_f1 60.79799
+2025-04-01_19:07:04 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_19:07:20 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_19:07:37 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01980, valid_loss 0.62087, test_loss 0.65732
+2025-04-01_19:07:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.75309, precision 77.01058, recall 63.86243
+2025-04-01_19:07:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.11588, f1 60.31836, precision 67.61905, recall 57.49410, now best_f1 60.79799
+2025-04-01_19:07:37 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_19:07:53 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_19:08:08 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01745, valid_loss 0.61428, test_loss 0.65322
+2025-04-01_19:08:08 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 67.75309, precision 77.01058, recall 63.86243
+2025-04-01_19:08:08 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.68670, f1 60.20617, precision 65.79386, recall 57.85248, now best_f1 60.79799
+2025-04-01_19:08:08 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_19:08:25 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01825, valid_loss 0.60552, test_loss 0.65401
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.29167, f1 66.39738, precision 74.56634, recall 63.38624
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.97425, f1 63.29894, precision 68.53529, recall 60.88278, now best_f1 60.79799
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 380 line - Best model acc 81.97425, f1 60.79799, precision 65.79505, recall 58.45128
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_DT_fold_4_60.79799_04-01-19-02.csv
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 445 line - target "DT" fold 5 train finish, acc:81.97425, f1:60.79799, precision:65.79505, recall:58.45128
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 462 line - target "DT" train finish
+2025-04-01_19:08:39 - INFO - new_run_tmpt.py      : 418 line - preparing data...
+2025-04-01_19:09:20 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:1
+2025-04-01_19:09:20 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_19:09:28 - INFO - tmpt_dataset.py      : 163 line - loading data 622 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/train.csv
+2025-04-01_19:09:28 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 288 Against: 266 Neutral: 68
+2025-04-01_19:09:34 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:09:34 - INFO - tmpt_dataset.py      : 163 line - loading data 90 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/valid.csv
+2025-04-01_19:09:34 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 42 Against: 38 Neutral: 10
+2025-04-01_19:09:35 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:09:36 - INFO - tmpt_dataset.py      : 163 line - loading data 178 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/test.csv
+2025-04-01_19:09:36 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 80 Against: 81 Neutral: 17
+2025-04-01_19:09:37 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:09:37 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_19:10:18 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_19:10:18 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_19:10:31 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_19:10:46 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.94952, valid_loss 0.80736, test_loss 0.84947
+2025-04-01_19:10:46 - INFO - new_run_tmpt.py      : 377 line - valid: acc 62.22222, f1 42.74210, precision 45.16056, recall 45.86466
+2025-04-01_19:10:46 - INFO - new_run_tmpt.py      : 378 line - test: acc 56.74157, f1 37.72758, precision 40.52578, recall 41.93930, now best_f1 37.72758
+2025-04-01_19:10:46 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_19:11:00 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_19:11:16 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.55950, valid_loss 0.60338, test_loss 0.60512
+2025-04-01_19:11:16 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 67.12665, precision 67.45890, recall 67.84461
+2025-04-01_19:11:16 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.08989, f1 65.09405, precision 69.76852, recall 63.74334, now best_f1 65.09405
+2025-04-01_19:11:16 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_19:11:29 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_19:11:43 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.32169, valid_loss 0.64797, test_loss 0.47469
+2025-04-01_19:11:43 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 72.08572, precision 72.23732, recall 73.71763
+2025-04-01_19:11:43 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 70.82479, precision 74.23932, recall 69.30071, now best_f1 70.82479
+2025-04-01_19:11:43 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_19:11:57 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_19:12:11 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.20350, valid_loss 0.69380, test_loss 0.59347
+2025-04-01_19:12:11 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 67.74854, precision 67.69374, recall 69.34002
+2025-04-01_19:12:11 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.40449, f1 65.78785, precision 65.99794, recall 65.60215, now best_f1 70.82479
+2025-04-01_19:12:11 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_19:12:24 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_19:12:37 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.13185, valid_loss 0.83432, test_loss 0.60379
+2025-04-01_19:12:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 65.96745, precision 69.75309, recall 66.42439
+2025-04-01_19:12:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 71.38863, precision 71.57568, recall 72.27669, now best_f1 70.82479
+2025-04-01_19:12:37 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_19:12:50 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_19:13:05 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.08333, valid_loss 0.86388, test_loss 0.86352
+2025-04-01_19:13:05 - INFO - new_run_tmpt.py      : 377 line - valid: acc 70.00000, f1 65.59441, precision 69.26034, recall 72.40602
+2025-04-01_19:13:05 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.34831, f1 64.66575, precision 66.39194, recall 71.20945, now best_f1 70.82479
+2025-04-01_19:13:05 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_19:13:19 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_19:13:33 - INFO - new_run_tmpt.py      : 366 line - Best model acc 80.33708, f1 69.37751, precision 70.77677, recall 68.49310
+2025-04-01_19:13:33 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:13:33 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.06005, valid_loss 0.80300, test_loss 0.60887
+2025-04-01_19:13:33 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.11111, f1 75.22045, precision 79.28571, recall 73.64244
+2025-04-01_19:13:33 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 69.37751, precision 70.77677, recall 68.49310, now best_f1 69.37751
+2025-04-01_19:13:33 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_19:13:47 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_19:14:01 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.05191, valid_loss 0.62409, test_loss 0.59297
+2025-04-01_19:14:01 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 61.00887, precision 64.84034, recall 61.89641
+2025-04-01_19:14:01 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.58427, f1 73.28989, precision 83.58650, recall 70.15977, now best_f1 69.37751
+2025-04-01_19:14:01 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_19:14:14 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_19:14:29 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.04408, valid_loss 0.71590, test_loss 0.57847
+2025-04-01_19:14:29 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 72.98662, precision 73.27899, recall 74.51128
+2025-04-01_19:14:29 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 73.21436, precision 72.13511, recall 75.10167, now best_f1 69.37751
+2025-04-01_19:14:29 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_19:14:42 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_19:14:55 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.03770, valid_loss 0.89742, test_loss 0.57171
+2025-04-01_19:14:55 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 71.30061, precision 73.70131, recall 71.26149
+2025-04-01_19:14:55 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 71.17965, precision 73.41271, recall 70.01664, now best_f1 69.37751
+2025-04-01_19:14:55 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_19:15:09 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_19:15:22 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.02765, valid_loss 0.83309, test_loss 0.77927
+2025-04-01_19:15:22 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 57.87037, precision 67.57444, recall 58.05347
+2025-04-01_19:15:22 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.52809, f1 63.51315, precision 85.37022, recall 61.81857, now best_f1 69.37751
+2025-04-01_19:15:22 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_19:15:36 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_19:15:50 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02307, valid_loss 0.68677, test_loss 0.62359
+2025-04-01_19:15:50 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 69.18581, precision 69.54536, recall 69.26483
+2025-04-01_19:15:50 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 71.88335, precision 72.25275, recall 71.59677, now best_f1 69.37751
+2025-04-01_19:15:50 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_19:16:04 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_19:16:22 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.01837, valid_loss 0.77814, test_loss 0.64590
+2025-04-01_19:16:22 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 61.81475, precision 63.35317, recall 61.97160
+2025-04-01_19:16:22 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 68.52136, precision 74.55882, recall 66.53746, now best_f1 69.37751
+2025-04-01_19:16:22 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_19:16:37 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_19:16:53 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02476, valid_loss 0.84502, test_loss 0.66225
+2025-04-01_19:16:53 - INFO - new_run_tmpt.py      : 377 line - valid: acc 73.33333, f1 60.19685, precision 61.11666, recall 60.13367
+2025-04-01_19:16:53 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 69.93184, precision 73.96825, recall 68.08158, now best_f1 69.37751
+2025-04-01_19:16:53 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_19:17:08 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_19:17:23 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.01794, valid_loss 0.87492, test_loss 0.66417
+2025-04-01_19:17:23 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 61.99985, precision 63.76068, recall 61.80451
+2025-04-01_19:17:23 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 68.51397, precision 74.58426, recall 66.54260, now best_f1 69.37751
+2025-04-01_19:17:23 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_19:17:38 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_19:17:53 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.02058, valid_loss 0.80908, test_loss 0.70400
+2025-04-01_19:17:53 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 62.21046, precision 65.12366, recall 61.72097
+2025-04-01_19:17:53 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 68.10724, precision 74.21106, recall 66.13108, now best_f1 69.37751
+2025-04-01_19:17:53 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_19:18:08 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_19:18:24 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01655, valid_loss 0.75847, test_loss 0.69965
+2025-04-01_19:18:24 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 67.37716, precision 68.93148, recall 66.72515
+2025-04-01_19:18:24 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 69.91162, precision 74.07407, recall 68.09701, now best_f1 69.37751
+2025-04-01_19:18:24 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_19:18:38 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_19:18:53 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01349, valid_loss 0.79799, test_loss 0.69953
+2025-04-01_19:18:53 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 64.53612, precision 65.27281, recall 64.09357
+2025-04-01_19:18:53 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 69.13307, precision 72.18374, recall 67.68549, now best_f1 69.37751
+2025-04-01_19:18:53 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_19:19:06 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_19:19:21 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01352, valid_loss 0.78349, test_loss 0.69407
+2025-04-01_19:19:21 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 67.37716, precision 68.93148, recall 66.72515
+2025-04-01_19:19:21 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 69.91162, precision 74.07407, recall 68.09701, now best_f1 69.37751
+2025-04-01_19:19:21 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_19:19:35 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01629, valid_loss 0.77908, test_loss 0.69187
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 66.25339, precision 67.02381, recall 65.93150
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 69.92179, precision 74.01515, recall 68.09187, now best_f1 69.37751
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 380 line - Best model acc 80.33708, f1 69.37751, precision 70.77677, recall 68.49310
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_JB_fold_0_69.37751_04-01-19-13.csv
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 445 line - target "JB" fold 1 train finish, acc:80.33708, f1:69.37751, precision:70.77677, recall:68.49310
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:2
+2025-04-01_19:19:49 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_19:19:57 - INFO - tmpt_dataset.py      : 163 line - loading data 622 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/train.csv
+2025-04-01_19:19:57 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 288 Against: 266 Neutral: 68
+2025-04-01_19:20:01 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:20:02 - INFO - tmpt_dataset.py      : 163 line - loading data 90 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/valid.csv
+2025-04-01_19:20:02 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 42 Against: 38 Neutral: 10
+2025-04-01_19:20:02 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:20:03 - INFO - tmpt_dataset.py      : 163 line - loading data 178 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/test.csv
+2025-04-01_19:20:03 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 80 Against: 81 Neutral: 17
+2025-04-01_19:20:05 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:20:05 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_19:20:46 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_19:20:46 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_19:20:59 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_19:21:13 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.98747, valid_loss 0.95324, test_loss 0.90958
+2025-04-01_19:21:13 - INFO - new_run_tmpt.py      : 377 line - valid: acc 56.66667, f1 43.01102, precision 53.17562, recall 46.02339
+2025-04-01_19:21:13 - INFO - new_run_tmpt.py      : 378 line - test: acc 61.23596, f1 44.58896, precision 53.14982, recall 46.56984, now best_f1 44.58896
+2025-04-01_19:21:13 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_19:21:26 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_19:21:41 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.63089, valid_loss 0.65501, test_loss 0.59216
+2025-04-01_19:21:41 - INFO - new_run_tmpt.py      : 377 line - valid: acc 68.88889, f1 58.45805, precision 81.90476, recall 57.29323
+2025-04-01_19:21:41 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.84270, f1 59.32616, precision 73.65079, recall 58.95243, now best_f1 59.32616
+2025-04-01_19:21:41 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_19:21:53 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_19:22:08 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.34117, valid_loss 0.54954, test_loss 0.60675
+2025-04-01_19:22:08 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 65.14392, precision 65.38462, recall 64.97076
+2025-04-01_19:22:08 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.84270, f1 66.90245, precision 67.22302, recall 68.32002, now best_f1 66.90245
+2025-04-01_19:22:08 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_19:22:21 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_19:22:36 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.17732, valid_loss 0.59024, test_loss 0.58480
+2025-04-01_19:22:36 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 64.82924, precision 64.73918, recall 64.97076
+2025-04-01_19:22:36 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.65169, f1 70.63709, precision 70.62908, recall 71.92689, now best_f1 66.90245
+2025-04-01_19:22:36 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_19:22:49 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_19:23:04 - INFO - new_run_tmpt.py      : 366 line - Best model acc 82.02247, f1 73.12578, precision 73.57201, recall 72.84162
+2025-04-01_19:23:04 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:23:04 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.10698, valid_loss 0.56197, test_loss 0.47211
+2025-04-01_19:23:04 - INFO - new_run_tmpt.py      : 377 line - valid: acc 83.33333, f1 72.11704, precision 80.93496, recall 70.15038
+2025-04-01_19:23:04 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 73.12578, precision 73.57201, recall 72.84162, now best_f1 73.12578
+2025-04-01_19:23:04 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_19:23:18 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_19:23:32 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.08424, valid_loss 0.94498, test_loss 0.62451
+2025-04-01_19:23:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 73.33333, f1 60.90104, precision 68.59238, recall 60.46784
+2025-04-01_19:23:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.77528, f1 68.19686, precision 74.21296, recall 66.49116, now best_f1 73.12578
+2025-04-01_19:23:32 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_19:23:45 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_19:24:00 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.07989, valid_loss 0.54821, test_loss 0.56761
+2025-04-01_19:24:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.11111, f1 69.35805, precision 72.27307, recall 68.22891
+2025-04-01_19:24:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.52809, f1 72.09219, precision 72.89042, recall 72.65311, now best_f1 73.12578
+2025-04-01_19:24:00 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_19:24:14 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_19:24:29 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.04274, valid_loss 0.60010, test_loss 0.54449
+2025-04-01_19:24:29 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 66.49573, precision 68.02602, recall 65.76441
+2025-04-01_19:24:29 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 72.79257, precision 73.84225, recall 73.17175, now best_f1 73.12578
+2025-04-01_19:24:29 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_19:24:43 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_19:24:58 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.04191, valid_loss 0.67421, test_loss 0.74076
+2025-04-01_19:24:58 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 62.65618, precision 64.58050, recall 62.26399
+2025-04-01_19:24:58 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.28090, f1 69.89638, precision 73.79998, recall 69.47319, now best_f1 73.12578
+2025-04-01_19:24:58 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_19:25:12 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_19:25:26 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.02867, valid_loss 0.76253, test_loss 0.53385
+2025-04-01_19:25:26 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13708, precision 75.97884, recall 65.06266
+2025-04-01_19:25:26 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 71.58788, precision 73.31321, recall 70.45903, now best_f1 73.12578
+2025-04-01_19:25:26 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_19:25:40 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_19:25:54 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.02511, valid_loss 0.60043, test_loss 0.66611
+2025-04-01_19:25:54 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.22222, f1 71.27872, precision 80.03623, recall 69.10610
+2025-04-01_19:25:54 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.08989, f1 72.23231, precision 74.45076, recall 71.51537, now best_f1 73.12578
+2025-04-01_19:25:54 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_19:26:08 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_19:26:22 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02424, valid_loss 0.63156, test_loss 0.57792
+2025-04-01_19:26:22 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.11111, f1 66.91829, precision 76.66197, recall 65.85631
+2025-04-01_19:26:22 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 74.76127, precision 76.51230, recall 73.55755, now best_f1 73.12578
+2025-04-01_19:26:22 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_19:26:35 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_19:26:51 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02443, valid_loss 0.73075, test_loss 0.56142
+2025-04-01_19:26:51 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.11111, f1 66.91829, precision 76.66197, recall 65.85631
+2025-04-01_19:26:51 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 73.41493, precision 75.58208, recall 72.00829, now best_f1 73.12578
+2025-04-01_19:26:51 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_19:27:05 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_19:27:19 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.01807, valid_loss 0.69932, test_loss 0.57776
+2025-04-01_19:27:19 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13708, precision 75.97884, recall 65.06266
+2025-04-01_19:27:19 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 75.15809, precision 76.89109, recall 73.97422, now best_f1 73.12578
+2025-04-01_19:27:19 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_19:27:32 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_19:27:46 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.01915, valid_loss 0.64781, test_loss 0.59314
+2025-04-01_19:27:46 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13398, precision 75.88677, recall 65.06266
+2025-04-01_19:27:46 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 76.34844, precision 77.10546, recall 75.94015, now best_f1 73.12578
+2025-04-01_19:27:46 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_19:28:00 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_19:28:14 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.02169, valid_loss 0.69249, test_loss 0.61720
+2025-04-01_19:28:14 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.22222, f1 71.30122, precision 80.01443, recall 69.18964
+2025-04-01_19:28:14 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 73.90096, precision 75.30210, recall 73.15632, now best_f1 73.12578
+2025-04-01_19:28:14 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_19:28:28 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_19:28:42 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.02220, valid_loss 0.76391, test_loss 0.58009
+2025-04-01_19:28:42 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13708, precision 75.97884, recall 65.06266
+2025-04-01_19:28:42 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 73.82560, precision 76.03230, recall 72.42496, now best_f1 73.12578
+2025-04-01_19:28:42 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_19:28:56 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_19:29:10 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01827, valid_loss 0.72549, test_loss 0.58555
+2025-04-01_19:29:10 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13708, precision 75.97884, recall 65.06266
+2025-04-01_19:29:10 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 73.82560, precision 76.03230, recall 72.42496, now best_f1 73.12578
+2025-04-01_19:29:10 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_19:29:23 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_19:29:38 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01816, valid_loss 0.72608, test_loss 0.58651
+2025-04-01_19:29:38 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13708, precision 75.97884, recall 65.06266
+2025-04-01_19:29:38 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 73.82560, precision 76.03230, recall 72.42496, now best_f1 73.12578
+2025-04-01_19:29:38 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_19:29:51 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01620, valid_loss 0.72929, test_loss 0.58485
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13708, precision 75.97884, recall 65.06266
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 73.82560, precision 76.03230, recall 72.42496, now best_f1 73.12578
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 380 line - Best model acc 82.02247, f1 73.12578, precision 73.57201, recall 72.84162
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_JB_fold_1_73.12578_04-01-19-23.csv
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 445 line - target "JB" fold 2 train finish, acc:82.02247, f1:73.12578, precision:73.57201, recall:72.84162
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:3
+2025-04-01_19:30:06 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_19:30:13 - INFO - tmpt_dataset.py      : 163 line - loading data 622 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/train.csv
+2025-04-01_19:30:13 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 288 Against: 266 Neutral: 68
+2025-04-01_19:30:18 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:30:19 - INFO - tmpt_dataset.py      : 163 line - loading data 90 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/valid.csv
+2025-04-01_19:30:19 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 42 Against: 38 Neutral: 10
+2025-04-01_19:30:20 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:30:21 - INFO - tmpt_dataset.py      : 163 line - loading data 178 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/test.csv
+2025-04-01_19:30:21 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 80 Against: 81 Neutral: 17
+2025-04-01_19:30:22 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:30:22 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_19:31:03 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_19:31:03 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_19:31:17 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_19:31:32 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.91314, valid_loss 0.85515, test_loss 0.85105
+2025-04-01_19:31:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 71.11111, f1 65.54495, precision 64.97598, recall 68.62155
+2025-04-01_19:31:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 72.47191, f1 64.99500, precision 64.41024, recall 65.78916, now best_f1 64.99500
+2025-04-01_19:31:32 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_19:31:46 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_19:32:00 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.56987, valid_loss 0.66501, test_loss 0.72980
+2025-04-01_19:32:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 64.17593, precision 65.06734, recall 63.83459
+2025-04-01_19:32:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.34831, f1 58.33988, precision 60.92476, recall 58.84108, now best_f1 64.99500
+2025-04-01_19:32:00 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_19:32:14 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_19:32:29 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.37092, valid_loss 0.54176, test_loss 0.58305
+2025-04-01_19:32:29 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.22222, f1 75.28228, precision 76.93089, recall 74.18546
+2025-04-01_19:32:29 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.96629, f1 65.83227, precision 69.41729, recall 64.48499, now best_f1 65.83227
+2025-04-01_19:32:29 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_19:32:43 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_19:32:58 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.21355, valid_loss 0.66853, test_loss 0.52193
+2025-04-01_19:32:58 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 69.06926, precision 75.14286, recall 67.85297
+2025-04-01_19:32:58 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 72.35910, precision 74.86450, recall 70.87570, now best_f1 65.83227
+2025-04-01_19:32:58 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_19:33:12 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_19:33:27 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.14282, valid_loss 0.70707, test_loss 0.59497
+2025-04-01_19:33:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 69.50834, precision 70.12617, recall 69.18129
+2025-04-01_19:33:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 68.89235, precision 69.04762, recall 69.24504, now best_f1 65.83227
+2025-04-01_19:33:27 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_19:33:41 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_19:33:55 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.07722, valid_loss 0.78102, test_loss 0.81200
+2025-04-01_19:33:55 - INFO - new_run_tmpt.py      : 377 line - valid: acc 71.11111, f1 66.73798, precision 69.16667, recall 65.49708
+2025-04-01_19:33:55 - INFO - new_run_tmpt.py      : 378 line - test: acc 74.15730, f1 63.15827, precision 64.55172, recall 63.99722, now best_f1 65.83227
+2025-04-01_19:33:55 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_19:34:09 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_19:34:24 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.06202, valid_loss 0.95183, test_loss 0.85033
+2025-04-01_19:34:24 - INFO - new_run_tmpt.py      : 377 line - valid: acc 67.77778, f1 47.77297, precision 46.63743, recall 50.41771
+2025-04-01_19:34:24 - INFO - new_run_tmpt.py      : 378 line - test: acc 74.71910, f1 63.55986, precision 78.79056, recall 61.31536, now best_f1 65.83227
+2025-04-01_19:34:24 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_19:34:38 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_19:34:53 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.06823, valid_loss 0.86489, test_loss 0.57605
+2025-04-01_19:34:53 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 66.13481, precision 76.61862, recall 65.31328
+2025-04-01_19:34:53 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 66.70332, precision 88.09524, recall 65.06960, now best_f1 65.83227
+2025-04-01_19:34:53 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_19:35:07 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_19:35:25 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.03346, valid_loss 0.95825, test_loss 0.54670
+2025-04-01_19:35:25 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 70.26401, precision 71.33431, recall 71.26149
+2025-04-01_19:35:25 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 71.49034, precision 71.07846, recall 72.00315, now best_f1 65.83227
+2025-04-01_19:35:25 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_19:35:40 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_19:35:56 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.04246, valid_loss 0.75014, test_loss 0.57177
+2025-04-01_19:35:56 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 70.33318, precision 74.87179, recall 68.47118
+2025-04-01_19:35:56 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 70.23436, precision 70.61398, recall 70.06294, now best_f1 65.83227
+2025-04-01_19:35:56 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_19:36:11 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_19:36:27 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.03310, valid_loss 0.70815, test_loss 0.64358
+2025-04-01_19:36:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 71.91378, precision 79.19808, recall 69.18129
+2025-04-01_19:36:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.96629, f1 66.98392, precision 67.08570, recall 67.59380, now best_f1 65.83227
+2025-04-01_19:36:27 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_19:36:41 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_19:36:57 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02151, valid_loss 0.72350, test_loss 0.56063
+2025-04-01_19:36:57 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 72.72876, precision 80.43673, recall 70.22556
+2025-04-01_19:36:57 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.14607, f1 73.98061, precision 77.54833, recall 72.12055, now best_f1 65.83227
+2025-04-01_19:36:57 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_19:37:11 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_19:37:27 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02435, valid_loss 0.69415, test_loss 0.63932
+2025-04-01_19:37:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 72.78460, precision 76.25708, recall 70.92732
+2025-04-01_19:37:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 68.94416, precision 68.86072, recall 69.23475, now best_f1 65.83227
+2025-04-01_19:37:27 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_19:37:42 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_19:37:57 - INFO - new_run_tmpt.py      : 366 line - Best model acc 80.89888, f1 70.67638, precision 70.99790, recall 70.46932
+2025-04-01_19:37:57 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:37:57 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02230, valid_loss 0.75567, test_loss 0.60842
+2025-04-01_19:37:57 - INFO - new_run_tmpt.py      : 377 line - valid: acc 82.22222, f1 76.94544, precision 83.33333, recall 74.43609
+2025-04-01_19:37:57 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 70.67638, precision 70.99790, recall 70.46932, now best_f1 70.67638
+2025-04-01_19:37:57 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_19:38:10 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_19:38:27 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.02076, valid_loss 0.76483, test_loss 0.65492
+2025-04-01_19:38:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 70.33318, precision 74.87179, recall 68.47118
+2025-04-01_19:38:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 69.41279, precision 69.85565, recall 69.23475, now best_f1 70.67638
+2025-04-01_19:38:27 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_19:38:40 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_19:38:54 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.01535, valid_loss 0.77995, test_loss 0.66279
+2025-04-01_19:38:54 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 70.31335, precision 74.67070, recall 68.38764
+2025-04-01_19:38:54 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 70.78653, precision 72.17372, recall 70.06808, now best_f1 70.67638
+2025-04-01_19:38:54 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_19:39:08 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_19:39:22 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01590, valid_loss 0.77178, test_loss 0.66398
+2025-04-01_19:39:22 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 68.08416, precision 76.91198, recall 65.84795
+2025-04-01_19:39:22 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 71.54248, precision 73.51747, recall 70.47961, now best_f1 70.67638
+2025-04-01_19:39:22 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_19:39:35 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_19:39:49 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01496, valid_loss 0.77276, test_loss 0.69768
+2025-04-01_19:39:49 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 68.05417, precision 76.92029, recall 65.76441
+2025-04-01_19:39:49 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.08989, f1 69.08551, precision 70.78312, recall 68.42199, now best_f1 70.67638
+2025-04-01_19:39:49 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_19:40:03 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_19:40:18 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01704, valid_loss 0.78213, test_loss 0.62087
+2025-04-01_19:40:18 - INFO - new_run_tmpt.py      : 377 line - valid: acc 80.00000, f1 74.44007, precision 78.17693, recall 72.68170
+2025-04-01_19:40:18 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 72.35193, precision 74.91755, recall 70.88084, now best_f1 70.67638
+2025-04-01_19:40:18 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_19:40:31 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01416, valid_loss 0.80724, test_loss 0.60569
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 377 line - valid: acc 81.11111, f1 76.13241, precision 82.33020, recall 73.55890
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 71.98628, precision 73.73814, recall 70.88084, now best_f1 70.67638
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 380 line - Best model acc 80.89888, f1 70.67638, precision 70.99790, recall 70.46932
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_JB_fold_2_70.67638_04-01-19-37.csv
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 445 line - target "JB" fold 3 train finish, acc:80.89888, f1:70.67638, precision:70.99790, recall:70.46932
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:4
+2025-04-01_19:40:46 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_19:40:52 - INFO - tmpt_dataset.py      : 163 line - loading data 622 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/train.csv
+2025-04-01_19:40:52 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 288 Against: 266 Neutral: 68
+2025-04-01_19:40:57 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:40:57 - INFO - tmpt_dataset.py      : 163 line - loading data 90 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/valid.csv
+2025-04-01_19:40:57 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 42 Against: 38 Neutral: 10
+2025-04-01_19:40:58 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:40:59 - INFO - tmpt_dataset.py      : 163 line - loading data 178 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/test.csv
+2025-04-01_19:40:59 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 80 Against: 81 Neutral: 17
+2025-04-01_19:41:00 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:41:00 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_19:41:41 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_19:41:41 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_19:41:54 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_19:42:10 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.93357, valid_loss 0.83115, test_loss 0.81894
+2025-04-01_19:42:10 - INFO - new_run_tmpt.py      : 377 line - valid: acc 66.66667, f1 54.82742, precision 55.89805, recall 55.45530
+2025-04-01_19:42:10 - INFO - new_run_tmpt.py      : 378 line - test: acc 69.10112, f1 56.81527, precision 57.96214, recall 57.07153, now best_f1 56.81527
+2025-04-01_19:42:10 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_19:42:22 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_19:42:37 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.54074, valid_loss 0.64219, test_loss 0.62137
+2025-04-01_19:42:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 73.33333, f1 61.10403, precision 72.77146, recall 60.55138
+2025-04-01_19:42:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.96629, f1 54.14028, precision 53.72024, recall 56.67695, now best_f1 54.14028
+2025-04-01_19:42:37 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_19:42:51 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_19:43:05 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.32337, valid_loss 0.70248, test_loss 0.77616
+2025-04-01_19:43:05 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 55.77993, precision 60.56183, recall 56.13200
+2025-04-01_19:43:05 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.34831, f1 58.82051, precision 64.34343, recall 58.86166, now best_f1 54.14028
+2025-04-01_19:43:05 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_19:43:18 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_19:43:32 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.23749, valid_loss 0.99295, test_loss 1.06189
+2025-04-01_19:43:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 70.00000, f1 53.51865, precision 62.95260, recall 54.21053
+2025-04-01_19:43:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 68.53933, f1 53.59429, precision 72.81204, recall 53.70552, now best_f1 54.14028
+2025-04-01_19:43:32 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_19:43:46 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_19:44:01 - INFO - new_run_tmpt.py      : 366 line - Best model acc 76.40449, f1 67.65268, precision 67.53357, recall 70.27052
+2025-04-01_19:44:01 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:44:01 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.13579, valid_loss 0.60335, test_loss 0.57938
+2025-04-01_19:44:01 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 67.76227, precision 67.59259, recall 70.83542
+2025-04-01_19:44:01 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.40449, f1 67.65268, precision 67.53357, recall 70.27052, now best_f1 67.65268
+2025-04-01_19:44:01 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_19:44:15 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_19:44:29 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.06696, valid_loss 0.75159, test_loss 0.51586
+2025-04-01_19:44:29 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 66.25397, precision 66.77646, recall 67.05096
+2025-04-01_19:44:29 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.33708, f1 73.12178, precision 73.40549, recall 73.11517, now best_f1 67.65268
+2025-04-01_19:44:29 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_19:44:43 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_19:44:58 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.05337, valid_loss 0.70949, test_loss 0.53960
+2025-04-01_19:44:58 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 54.74132, precision 52.36118, recall 57.76942
+2025-04-01_19:44:58 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 68.01745, precision 80.63280, recall 65.81639, now best_f1 67.65268
+2025-04-01_19:44:58 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_19:45:12 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_19:45:27 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.04090, valid_loss 0.74610, test_loss 0.54189
+2025-04-01_19:45:27 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 65.13955, precision 65.55556, recall 64.88722
+2025-04-01_19:45:27 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 75.48964, precision 75.55556, recall 75.95044, now best_f1 67.65268
+2025-04-01_19:45:27 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_19:45:41 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_19:45:55 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.02866, valid_loss 0.70931, test_loss 0.49431
+2025-04-01_19:45:55 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 60.94895, precision 62.40079, recall 61.17794
+2025-04-01_19:45:55 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.14607, f1 74.42681, precision 79.31460, recall 72.10512, now best_f1 67.65268
+2025-04-01_19:45:55 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_19:46:09 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_19:46:23 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.01954, valid_loss 0.72573, test_loss 0.53572
+2025-04-01_19:46:23 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 58.03826, precision 57.81746, recall 58.38764
+2025-04-01_19:46:23 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.58427, f1 75.04373, precision 78.20663, recall 73.26344, now best_f1 67.65268
+2025-04-01_19:46:23 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_19:46:36 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_19:46:50 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.02106, valid_loss 0.69870, test_loss 0.52992
+2025-04-01_19:46:50 - INFO - new_run_tmpt.py      : 377 line - valid: acc 77.77778, f1 60.19952, precision 60.76866, recall 60.85213
+2025-04-01_19:46:50 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 73.61080, precision 78.51994, recall 71.29236, now best_f1 67.65268
+2025-04-01_19:46:50 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_19:47:04 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_19:47:18 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02649, valid_loss 0.73002, test_loss 0.64326
+2025-04-01_19:47:18 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 59.53417, precision 59.38506, recall 59.97494
+2025-04-01_19:47:18 - INFO - new_run_tmpt.py      : 378 line - test: acc 79.21348, f1 69.60249, precision 70.78220, recall 69.25018, now best_f1 67.65268
+2025-04-01_19:47:18 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_19:47:32 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_19:47:47 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02022, valid_loss 0.87529, test_loss 0.55130
+2025-04-01_19:47:47 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 67.02722, precision 67.17236, recall 68.71345
+2025-04-01_19:47:47 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.70787, f1 78.50999, precision 80.59612, recall 77.14385, now best_f1 67.65268
+2025-04-01_19:47:47 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_19:48:01 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_19:48:15 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02015, valid_loss 0.78738, test_loss 0.62609
+2025-04-01_19:48:15 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 59.36229, precision 61.22076, recall 59.89140
+2025-04-01_19:48:15 - INFO - new_run_tmpt.py      : 378 line - test: acc 80.89888, f1 71.56454, precision 79.82999, recall 68.94063, now best_f1 67.65268
+2025-04-01_19:48:15 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_19:48:29 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_19:48:47 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.01530, valid_loss 0.80816, test_loss 0.54272
+2025-04-01_19:48:47 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 63.32083, precision 63.50932, recall 63.55054
+2025-04-01_19:48:47 - INFO - new_run_tmpt.py      : 378 line - test: acc 83.70787, f1 79.70528, precision 80.89023, recall 78.70855, now best_f1 67.65268
+2025-04-01_19:48:47 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_19:49:00 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_19:49:17 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.01349, valid_loss 0.75136, test_loss 0.55362
+2025-04-01_19:49:17 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 59.44444, precision 60.00738, recall 60.14202
+2025-04-01_19:49:17 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 71.54276, precision 77.09970, recall 69.33158, now best_f1 67.65268
+2025-04-01_19:49:17 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_19:49:31 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_19:49:45 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01754, valid_loss 0.77091, test_loss 0.58312
+2025-04-01_19:49:45 - INFO - new_run_tmpt.py      : 377 line - valid: acc 78.88889, f1 60.99734, precision 62.64493, recall 61.64578
+2025-04-01_19:49:45 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 71.12296, precision 75.31136, recall 69.34187, now best_f1 67.65268
+2025-04-01_19:49:45 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_19:50:00 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_19:50:14 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01728, valid_loss 0.79916, test_loss 0.56266
+2025-04-01_19:50:14 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 54.96767, precision 53.34072, recall 56.80869
+2025-04-01_19:50:14 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 71.94879, precision 77.47407, recall 69.74310, now best_f1 67.65268
+2025-04-01_19:50:14 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_19:50:28 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_19:50:42 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01684, valid_loss 0.78138, test_loss 0.57916
+2025-04-01_19:50:42 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 59.57768, precision 59.39369, recall 60.05848
+2025-04-01_19:50:42 - INFO - new_run_tmpt.py      : 378 line - test: acc 82.02247, f1 72.76436, precision 75.41507, recall 71.29751, now best_f1 67.65268
+2025-04-01_19:50:42 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_19:50:56 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01405, valid_loss 0.76603, test_loss 0.57469
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 377 line - valid: acc 76.66667, f1 59.57768, precision 59.39369, recall 60.05848
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 378 line - test: acc 81.46067, f1 72.35880, precision 74.97086, recall 70.88084, now best_f1 67.65268
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 380 line - Best model acc 76.40449, f1 67.65268, precision 67.53357, recall 70.27052
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_JB_fold_3_67.65268_04-01-19-44.csv
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 445 line - target "JB" fold 4 train finish, acc:76.40449, f1:67.65268, precision:67.53357, recall:70.27052
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 429 line - all train times:5, now is fold:5
+2025-04-01_19:51:11 - INFO - new_run_tmpt.py      : 430 line - preparing data...
+2025-04-01_19:51:16 - INFO - tmpt_dataset.py      : 163 line - loading data 622 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/train.csv
+2025-04-01_19:51:16 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 288 Against: 266 Neutral: 68
+2025-04-01_19:51:21 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:51:21 - INFO - tmpt_dataset.py      : 163 line - loading data 90 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/valid.csv
+2025-04-01_19:51:21 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 42 Against: 38 Neutral: 10
+2025-04-01_19:51:22 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:51:23 - INFO - tmpt_dataset.py      : 163 line - loading data 178 from dataset/Multi-Modal-Stance-Detection/Multi-modal-Twitter-Stance-Election-2020/MTSE/in_target/JB/test.csv
+2025-04-01_19:51:23 - INFO - tmpt_dataset.py      : 164 line - label num Favor: 80 Against: 81 Neutral: 17
+2025-04-01_19:51:24 - INFO - tmpt_dataset.py      : 131 line - Multi-modal Twitter Stance Election 2020 textual loading finished
+2025-04-01_19:51:24 - INFO - new_run_tmpt.py      : 268 line - init models, optimizer, criterion...
+2025-04-01_19:52:05 - INFO - new_run_tmpt.py      : 329 line - Start training...
+2025-04-01_19:52:05 - INFO - new_run_tmpt.py      : 341 line - epoch 1 start train
+2025-04-01_19:52:19 - INFO - new_run_tmpt.py      : 343 line - epoch 1 start evaluate
+2025-04-01_19:52:34 - INFO - new_run_tmpt.py      : 376 line - epoch 1 done! train_loss 0.94275, valid_loss 0.91245, test_loss 0.94249
+2025-04-01_19:52:34 - INFO - new_run_tmpt.py      : 377 line - valid: acc 65.55556, f1 58.26840, precision 59.82540, recall 59.65748
+2025-04-01_19:52:34 - INFO - new_run_tmpt.py      : 378 line - test: acc 65.16854, f1 53.75883, precision 55.36900, recall 54.16001, now best_f1 53.75883
+2025-04-01_19:52:34 - INFO - new_run_tmpt.py      : 341 line - epoch 2 start train
+2025-04-01_19:52:47 - INFO - new_run_tmpt.py      : 343 line - epoch 2 start evaluate
+2025-04-01_19:53:03 - INFO - new_run_tmpt.py      : 376 line - epoch 2 done! train_loss 0.57794, valid_loss 1.18572, test_loss 1.32580
+2025-04-01_19:53:03 - INFO - new_run_tmpt.py      : 377 line - valid: acc 61.11111, f1 45.59002, precision 84.84848, recall 47.19298
+2025-04-01_19:53:03 - INFO - new_run_tmpt.py      : 378 line - test: acc 53.93258, f1 41.68344, precision 63.44227, recall 44.55005, now best_f1 53.75883
+2025-04-01_19:53:03 - INFO - new_run_tmpt.py      : 341 line - epoch 3 start train
+2025-04-01_19:53:17 - INFO - new_run_tmpt.py      : 343 line - epoch 3 start evaluate
+2025-04-01_19:53:32 - INFO - new_run_tmpt.py      : 376 line - epoch 3 done! train_loss 0.37178, valid_loss 0.69324, test_loss 0.73985
+2025-04-01_19:53:32 - INFO - new_run_tmpt.py      : 377 line - valid: acc 68.88889, f1 50.01985, precision 49.04762, recall 51.46199
+2025-04-01_19:53:32 - INFO - new_run_tmpt.py      : 378 line - test: acc 73.03371, f1 63.87770, precision 66.62956, recall 63.15874, now best_f1 53.75883
+2025-04-01_19:53:32 - INFO - new_run_tmpt.py      : 341 line - epoch 4 start train
+2025-04-01_19:53:46 - INFO - new_run_tmpt.py      : 343 line - epoch 4 start evaluate
+2025-04-01_19:54:02 - INFO - new_run_tmpt.py      : 376 line - epoch 4 done! train_loss 0.22282, valid_loss 0.78259, test_loss 0.84838
+2025-04-01_19:54:02 - INFO - new_run_tmpt.py      : 377 line - valid: acc 73.33333, f1 61.91934, precision 63.26905, recall 62.17210
+2025-04-01_19:54:02 - INFO - new_run_tmpt.py      : 378 line - test: acc 70.78652, f1 61.75074, precision 63.74778, recall 63.06705, now best_f1 61.75074
+2025-04-01_19:54:02 - INFO - new_run_tmpt.py      : 341 line - epoch 5 start train
+2025-04-01_19:54:15 - INFO - new_run_tmpt.py      : 343 line - epoch 5 start evaluate
+2025-04-01_19:54:31 - INFO - new_run_tmpt.py      : 376 line - epoch 5 done! train_loss 0.11254, valid_loss 0.82311, test_loss 0.62424
+2025-04-01_19:54:31 - INFO - new_run_tmpt.py      : 377 line - valid: acc 74.44444, f1 61.34984, precision 64.92063, recall 61.17794
+2025-04-01_19:54:31 - INFO - new_run_tmpt.py      : 378 line - test: acc 78.08989, f1 68.64627, precision 69.33234, recall 68.36541, now best_f1 61.75074
+2025-04-01_19:54:31 - INFO - new_run_tmpt.py      : 341 line - epoch 6 start train
+2025-04-01_19:54:45 - INFO - new_run_tmpt.py      : 343 line - epoch 6 start evaluate
+2025-04-01_19:55:00 - INFO - new_run_tmpt.py      : 376 line - epoch 6 done! train_loss 0.07874, valid_loss 0.77365, test_loss 0.67902
+2025-04-01_19:55:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 51.60406, precision 49.25065, recall 54.34419
+2025-04-01_19:55:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 74.71910, f1 63.26655, precision 72.85181, recall 61.28450, now best_f1 61.75074
+2025-04-01_19:55:00 - INFO - new_run_tmpt.py      : 341 line - epoch 7 start train
+2025-04-01_19:55:15 - INFO - new_run_tmpt.py      : 343 line - epoch 7 start evaluate
+2025-04-01_19:55:30 - INFO - new_run_tmpt.py      : 376 line - epoch 7 done! train_loss 0.05082, valid_loss 0.93453, test_loss 0.83674
+2025-04-01_19:55:30 - INFO - new_run_tmpt.py      : 377 line - valid: acc 66.66667, f1 57.04004, precision 57.86765, recall 57.66082
+2025-04-01_19:55:30 - INFO - new_run_tmpt.py      : 378 line - test: acc 73.03371, f1 65.61176, precision 65.25898, recall 69.30949, now best_f1 61.75074
+2025-04-01_19:55:30 - INFO - new_run_tmpt.py      : 341 line - epoch 8 start train
+2025-04-01_19:55:43 - INFO - new_run_tmpt.py      : 343 line - epoch 8 start evaluate
+2025-04-01_19:56:00 - INFO - new_run_tmpt.py      : 366 line - Best model acc 76.40449, f1 66.50104, precision 67.93363, recall 65.60215
+2025-04-01_19:56:00 - INFO - new_run_tmpt.py      : 371 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/models/mtse_in_target_temp_model.pt
+2025-04-01_19:56:00 - INFO - new_run_tmpt.py      : 376 line - epoch 8 done! train_loss 0.05087, valid_loss 0.78747, test_loss 0.66538
+2025-04-01_19:56:00 - INFO - new_run_tmpt.py      : 377 line - valid: acc 75.55556, f1 64.59096, precision 65.84138, recall 64.42774
+2025-04-01_19:56:00 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.40449, f1 66.50104, precision 67.93363, recall 65.60215, now best_f1 66.50104
+2025-04-01_19:56:00 - INFO - new_run_tmpt.py      : 341 line - epoch 9 start train
+2025-04-01_19:56:16 - INFO - new_run_tmpt.py      : 343 line - epoch 9 start evaluate
+2025-04-01_19:56:35 - INFO - new_run_tmpt.py      : 376 line - epoch 9 done! train_loss 0.04226, valid_loss 0.81112, test_loss 0.77419
+2025-04-01_19:56:35 - INFO - new_run_tmpt.py      : 377 line - valid: acc 70.00000, f1 63.46969, precision 63.10105, recall 65.12114
+2025-04-01_19:56:35 - INFO - new_run_tmpt.py      : 378 line - test: acc 74.71910, f1 66.61904, precision 65.84377, recall 69.00508, now best_f1 66.50104
+2025-04-01_19:56:35 - INFO - new_run_tmpt.py      : 341 line - epoch 10 start train
+2025-04-01_19:56:53 - INFO - new_run_tmpt.py      : 343 line - epoch 10 start evaluate
+2025-04-01_19:57:09 - INFO - new_run_tmpt.py      : 376 line - epoch 10 done! train_loss 0.02722, valid_loss 0.82296, test_loss 0.93416
+2025-04-01_19:57:09 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 51.93730, precision 51.65131, recall 53.84294
+2025-04-01_19:57:09 - INFO - new_run_tmpt.py      : 378 line - test: acc 71.91011, f1 62.28126, precision 69.17607, recall 60.79672, now best_f1 66.50104
+2025-04-01_19:57:09 - INFO - new_run_tmpt.py      : 341 line - epoch 11 start train
+2025-04-01_19:57:23 - INFO - new_run_tmpt.py      : 343 line - epoch 11 start evaluate
+2025-04-01_19:57:38 - INFO - new_run_tmpt.py      : 376 line - epoch 11 done! train_loss 0.02895, valid_loss 0.81551, test_loss 0.84176
+2025-04-01_19:57:38 - INFO - new_run_tmpt.py      : 377 line - valid: acc 68.88889, f1 54.14437, precision 54.13592, recall 54.16876
+2025-04-01_19:57:38 - INFO - new_run_tmpt.py      : 378 line - test: acc 73.59551, f1 64.48192, precision 64.64389, recall 65.10924, now best_f1 66.50104
+2025-04-01_19:57:38 - INFO - new_run_tmpt.py      : 341 line - epoch 12 start train
+2025-04-01_19:57:54 - INFO - new_run_tmpt.py      : 343 line - epoch 12 start evaluate
+2025-04-01_19:58:08 - INFO - new_run_tmpt.py      : 376 line - epoch 12 done! train_loss 0.02082, valid_loss 0.89306, test_loss 0.72609
+2025-04-01_19:58:08 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 51.51515, precision 49.64912, recall 54.51128
+2025-04-01_19:58:08 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.52809, f1 66.24812, precision 69.45665, recall 64.87594, now best_f1 66.50104
+2025-04-01_19:58:08 - INFO - new_run_tmpt.py      : 341 line - epoch 13 start train
+2025-04-01_19:58:22 - INFO - new_run_tmpt.py      : 343 line - epoch 13 start evaluate
+2025-04-01_19:58:37 - INFO - new_run_tmpt.py      : 376 line - epoch 13 done! train_loss 0.02154, valid_loss 0.84243, test_loss 0.86360
+2025-04-01_19:58:37 - INFO - new_run_tmpt.py      : 377 line - valid: acc 70.00000, f1 54.74155, precision 54.56349, recall 55.04595
+2025-04-01_19:58:37 - INFO - new_run_tmpt.py      : 378 line - test: acc 73.03371, f1 61.87657, precision 63.69643, recall 61.60948, now best_f1 66.50104
+2025-04-01_19:58:37 - INFO - new_run_tmpt.py      : 341 line - epoch 14 start train
+2025-04-01_19:58:51 - INFO - new_run_tmpt.py      : 343 line - epoch 14 start evaluate
+2025-04-01_19:59:07 - INFO - new_run_tmpt.py      : 376 line - epoch 14 done! train_loss 0.02166, valid_loss 1.04826, test_loss 0.78099
+2025-04-01_19:59:07 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 55.95960, precision 57.33333, recall 57.13450
+2025-04-01_19:59:07 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.52809, f1 69.51023, precision 69.66784, recall 69.50315, now best_f1 66.50104
+2025-04-01_19:59:07 - INFO - new_run_tmpt.py      : 341 line - epoch 15 start train
+2025-04-01_19:59:21 - INFO - new_run_tmpt.py      : 343 line - epoch 15 start evaluate
+2025-04-01_19:59:36 - INFO - new_run_tmpt.py      : 376 line - epoch 15 done! train_loss 0.01995, valid_loss 0.83060, test_loss 0.84285
+2025-04-01_19:59:36 - INFO - new_run_tmpt.py      : 377 line - valid: acc 68.88889, f1 50.69339, precision 50.03940, recall 51.54553
+2025-04-01_19:59:36 - INFO - new_run_tmpt.py      : 378 line - test: acc 74.71910, f1 63.82092, precision 67.19672, recall 62.84919, now best_f1 66.50104
+2025-04-01_19:59:36 - INFO - new_run_tmpt.py      : 341 line - epoch 16 start train
+2025-04-01_19:59:51 - INFO - new_run_tmpt.py      : 343 line - epoch 16 start evaluate
+2025-04-01_20:00:06 - INFO - new_run_tmpt.py      : 376 line - epoch 16 done! train_loss 0.01686, valid_loss 0.87955, test_loss 0.75855
+2025-04-01_20:00:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 73.33333, f1 57.06414, precision 57.14007, recall 57.76107
+2025-04-01_20:00:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 76.96629, f1 67.55374, precision 67.58194, recall 67.56294, now best_f1 66.50104
+2025-04-01_20:00:06 - INFO - new_run_tmpt.py      : 341 line - epoch 17 start train
+2025-04-01_20:00:20 - INFO - new_run_tmpt.py      : 343 line - epoch 17 start evaluate
+2025-04-01_20:00:35 - INFO - new_run_tmpt.py      : 376 line - epoch 17 done! train_loss 0.01680, valid_loss 0.87616, test_loss 0.77087
+2025-04-01_20:00:35 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 56.26524, precision 56.25763, recall 56.88388
+2025-04-01_20:00:35 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.52809, f1 67.61677, precision 69.94139, recall 66.44063, now best_f1 66.50104
+2025-04-01_20:00:35 - INFO - new_run_tmpt.py      : 341 line - epoch 18 start train
+2025-04-01_20:00:49 - INFO - new_run_tmpt.py      : 343 line - epoch 18 start evaluate
+2025-04-01_20:01:05 - INFO - new_run_tmpt.py      : 376 line - epoch 18 done! train_loss 0.01738, valid_loss 0.90708, test_loss 0.76607
+2025-04-01_20:01:05 - INFO - new_run_tmpt.py      : 377 line - valid: acc 73.33333, f1 56.99031, precision 57.23647, recall 57.76107
+2025-04-01_20:01:05 - INFO - new_run_tmpt.py      : 378 line - test: acc 77.52809, f1 67.62294, precision 69.76333, recall 66.43034, now best_f1 66.50104
+2025-04-01_20:01:05 - INFO - new_run_tmpt.py      : 341 line - epoch 19 start train
+2025-04-01_20:01:19 - INFO - new_run_tmpt.py      : 343 line - epoch 19 start evaluate
+2025-04-01_20:01:36 - INFO - new_run_tmpt.py      : 376 line - epoch 19 done! train_loss 0.01486, valid_loss 0.83363, test_loss 0.79728
+2025-04-01_20:01:36 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 56.26524, precision 56.25763, recall 56.88388
+2025-04-01_20:01:36 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.84270, f1 65.79120, precision 67.06349, recall 65.20606, now best_f1 66.50104
+2025-04-01_20:01:36 - INFO - new_run_tmpt.py      : 341 line - epoch 20 start train
+2025-04-01_20:01:50 - INFO - new_run_tmpt.py      : 343 line - epoch 20 start evaluate
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 376 line - epoch 20 done! train_loss 0.01601, valid_loss 0.89058, test_loss 0.80536
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 377 line - valid: acc 72.22222, f1 56.26524, precision 56.25763, recall 56.88388
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 378 line - test: acc 75.84270, f1 65.79120, precision 67.06349, recall 65.20606, now best_f1 66.50104
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 380 line - Best model acc 76.40449, f1 66.50104, precision 67.93363, recall 65.60215
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 388 line - Saving best results in /root/autodl-tmp/MMA4StanceDetection/outputs/mtse_in_target_adaptered_tmpt_roberta_vit_2025-04-01_18-13-25/results/mtse_in_target_JB_fold_4_66.50104_04-01-19-56.csv
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 445 line - target "JB" fold 5 train finish, acc:76.40449, f1:66.50104, precision:67.93363, recall:65.60215
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 462 line - target "JB" train finish
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 518 line - all train finish
+2025-04-01_20:02:06 - INFO - new_run_tmpt.py      : 520 line - 
+target_name	acc_avg:	f1_avg:	precision_avg:	recall_avg:	acc_std	f1_std	precision_std	recall_std	acc_sem	f1_sem	precision_sem	recall_sem
+DT	79.82833	59.86915	65.13954	57.82798	1.48674	2.11413	2.80005	2.53353	0.66489	0.94547	1.25222	1.13303	
+JB	79.21348	69.46668	70.16278	69.53534	2.35687	2.32146	2.21717	2.40418	1.05403	1.03819	0.99155	1.07518	
+overall	79.56204	66.17306	68.32826	65.11993	0.88399	1.42121	2.17630	1.49177	0.39533	0.63559	0.97327	0.66714	
+

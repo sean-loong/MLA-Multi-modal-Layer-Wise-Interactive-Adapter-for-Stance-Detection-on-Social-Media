@@ -4,8 +4,8 @@ dataset/*
 # !dataset/Multi-Modal-Stance-Detection
 model_state
 logs
-outputs
-! outputs/**/training_result.log
+outputs/*
+!outputs/valid_result
 wandb
 tmpt_logs
 .env
