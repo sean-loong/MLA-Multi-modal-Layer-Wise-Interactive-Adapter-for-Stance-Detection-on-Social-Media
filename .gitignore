@@ -5,6 +5,7 @@ dataset/*
 model_state
 logs
 outputs
+! outputs/**/training_result.log
 wandb
 tmpt_logs
 .env
