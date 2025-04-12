@@ -24,7 +24,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--debug_mode', action='store_true')
 parser.add_argument('--cuda_idx', type=int)
 parser.add_argument('--dataset_name', type=str)
-parser.add_argument('--framework_name', type=str, default='tmpt')
+parser.add_argument('--framework_name', type=str, default='MLA')
 parser.add_argument('--model_name', type=str, default='roberta_vit')
 parser.add_argument('--in_target', action='store_true')
 parser.add_argument('--zero_shot', action='store_true')
@@ -40,7 +40,7 @@ trainData = 'in_target' if GLOBAL_ARGS.in_target else 'zero_shot'
 runMode = 'normal' if GLOBAL_ARGS.normal else ('wandb' if GLOBAL_ARGS.wandb else 'sweep')
 
 curr_time = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-output_dir = f'adaptered_tmpt_logs/{trainData}'
+output_dir = f'MLA_logs/{trainData}'
 os.makedirs(output_dir, exist_ok=True)
 output_name = f"{output_dir}/{GLOBAL_ARGS.dataset_name}_{GLOBAL_ARGS.framework_name}_{GLOBAL_ARGS.model_name}_{curr_time}.log"
 
@@ -99,9 +99,8 @@ if not GLOBAL_ARGS.debug_mode:
         os.makedirs(CUR_RESULTS_DIR)
 
 CONFIG_PATH = {
-    'tmpt': 'config/tmpt_config.yaml',
-    'adaptered_tmpt': 'config/adaptered_tmpt_config.yaml',
-    'tmpt_gpt_cot': 'config/tmpt_config.yaml',
+    'MLA': 'config/MLA_config.yaml',
+    'MLA_gpt_cot': 'config/MLA_config.yaml',
 }
 raw_config = read_yaml(CONFIG_PATH[GLOBAL_ARGS.framework_name])
 
@@ -127,8 +126,8 @@ if GLOBAL_ARGS.adapter_type == 'MMADAPTER':
     raw_config['adapter_config'] = raw_config['adapter_config']['MMADAPTER']
 
 
-if GLOBAL_ARGS.framework_name == 'adaptered_tmpt' or GLOBAL_ARGS.framework_name == 'tmpt_gpt_cot':
-    from models.tmpt.adaptered_tmpt_model import adaptered_TMPTModel as Model
+if GLOBAL_ARGS.framework_name == 'MLA' or GLOBAL_ARGS.framework_name == 'MLA_gpt_cot':
+    from models.MLA.MLA_model import MLA_Model as Model
 else:
     raise ValueError('Invalid framework')
 
@@ -168,7 +167,7 @@ def build_dataset(args, tokenizer, target_name=None):
         tokenizer=tokenizer,
         target_name=target_name,
         if_split_hash_tag=args.if_split_hash_tag,
-        if_cat_cot=True if GLOBAL_ARGS.framework_name == 'tmpt_gpt_cot' else False,
+        if_cat_cot=True if GLOBAL_ARGS.framework_name == 'MLA_gpt_cot' else False,
         in_target=GLOBAL_ARGS.in_target,
         zero_shot=GLOBAL_ARGS.zero_shot,
         train_data=True,
@@ -178,7 +177,7 @@ def build_dataset(args, tokenizer, target_name=None):
         tokenizer=tokenizer,
         target_name=target_name,
         if_split_hash_tag=args.if_split_hash_tag,
-        if_cat_cot=True if GLOBAL_ARGS.framework_name == 'tmpt_gpt_cot' else False,
+        if_cat_cot=True if GLOBAL_ARGS.framework_name == 'MLA_gpt_cot' else False,
         in_target=GLOBAL_ARGS.in_target,
         zero_shot=GLOBAL_ARGS.zero_shot,
         valid_data=True,
@@ -188,7 +187,7 @@ def build_dataset(args, tokenizer, target_name=None):
         tokenizer=tokenizer,
         target_name=target_name,
         if_split_hash_tag=args.if_split_hash_tag,
-        if_cat_cot=True if GLOBAL_ARGS.framework_name == 'tmpt_gpt_cot' else False,
+        if_cat_cot=True if GLOBAL_ARGS.framework_name == 'MLA_gpt_cot' else False,
         in_target=GLOBAL_ARGS.in_target,
         zero_shot=GLOBAL_ARGS.zero_shot,
         test_data=True,

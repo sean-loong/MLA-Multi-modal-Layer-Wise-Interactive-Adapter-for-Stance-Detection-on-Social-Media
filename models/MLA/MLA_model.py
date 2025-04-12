@@ -3,10 +3,10 @@ sys.path.append('./')
 from collections import OrderedDict
 import torch
 import torch.nn as nn
-from models.tmpt.adaptered_tmpt_textual_model import TMPTTextualModel
-from models.tmpt.adaptered_tmpt_visual_model import TMPTVisualModel
-from models.tmpt.adaptered_tmpt_textual_model import adaptered_TMPTTextualModel
-from models.tmpt.adaptered_tmpt_visual_model import adaptered_TMPTVisualModel
+from models.MLA.MLA_textual_model import TMPTTextualModel
+from models.MLA.MLA_visual_model import TMPTVisualModel
+from models.MLA.MLA_textual_model import adaptered_TMPTTextualModel
+from models.MLA.MLA_visual_model import adaptered_TMPTVisualModel
 
 
 class AdapterLearner(nn.Module):
@@ -88,7 +88,7 @@ class AdapterLearner(nn.Module):
 
 
 
-class adaptered_TMPTModel(nn.Module):
+class MLA_Model(nn.Module):
     def __init__(self, args):
         super().__init__()
 
