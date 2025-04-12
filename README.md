@@ -1,4 +1,4 @@
-# Multi-modal Stance Detection: New Datasets and Model 
+# Multi-modal Layer-Wise Interactive Adapter for Stance Detection on Social Medi
 
 This repository open-sources the code and datas in **Multi-modal Layer-Wise Interactive Adapter for Stance Detection on Social Media**.
 
