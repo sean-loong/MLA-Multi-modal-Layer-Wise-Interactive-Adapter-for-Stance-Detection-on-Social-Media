@@ -59,4 +59,4 @@ Our MLA on zero-shot stance detection on mwtwt dataset:
 ```
 
 # Acknowledges
-The code is implemented based on the excellent work: [Multi-Modal-Stance-Detection](https://github.com/Leon-Francis/Multi-Modal-Stance-Detection)
+The code is implemented based on the excellent work: [Multi-modal Stance Detection: New Datasets and Model](https://github.com/Leon-Francis/Multi-Modal-Stance-Detection)
