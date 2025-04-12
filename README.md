@@ -2,9 +2,10 @@
 
 This repository open-sources the code and datas in **Multi-modal Layer-Wise Interactive Adapter for Stance Detection on Social Media**.
 
-Please cite our paper and kindly give a star for this repository if you use our code or data.
+
 
 # Datasets
+Coming soon!!
 
 Noted: Due to Twitter's [developer agreement and privacy policy](https://developer.x.com/en/more/developer-terms/agreement-and-policy), researchers are only permitted to public Post IDs and User IDs. Therefore, in our GitHub repository, we open source the Post IDs and our annotation results. This approach aligns with the current mainstream practices in Twitter data research. The data is released for non-commercial research use.
 
@@ -12,7 +13,7 @@ Noted: Due to Twitter's [developer agreement and privacy policy](https://develop
 
 Please refer to [tools and libraries](https://developer.x.com/en/docs/twitter-api/tools-and-libraries/v2) to view hydrating tools supported by Twitter. [Tweepy](https://github.com/tweepy/tweepy) and [twarc](https://twarc-project.readthedocs.io/en/latest/twarc2_en_us/) are two commonly used tools. Before using these tools, you need to apply for the Twitter developer account. Afterwards, use these tools to supplement the content based on Post IDs.
 
-##
+## Details about the datasets
 
 For more details about the datasets, the please refer to the [data description](./dataset/Multi-Modal-Stance-Detection/README.md).
 
