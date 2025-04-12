@@ -1,6 +1,6 @@
 # Multi-modal Stance Detection: New Datasets and Model 
 
-This repository open-sources the code and datas in our [paper](https://arxiv.org/abs/2402.14298)「**Multi-modal Stance Detection: New Datasets and Model**」in ACL2024 findings long paper.
+This repository open-sources the code and datas in **Multi-modal Layer-Wise Interactive Adapter for Stance Detection on Social Media**.
 
 Please cite our paper and kindly give a star for this repository if you use our code or data.
 
@@ -30,8 +30,8 @@ Download your needed model weights into `model_state` or remove all `model_state
 # baseline
 sh scripts/run_baseline.sh
 
-# tmpt
-sh scripts/run_tmpt.sh
+# MLA
+sh scripts/run_MLA.sh
 ```
 
 Take the CLIP model on in-target stance detection on mtse dataset for example:
@@ -46,35 +46,17 @@ Take the CLIP model on in-target stance detection on mtse dataset for example:
 >>> input training cuda idx: Your Cuda index
 ```
 
-Our TMPT on zero-shot stance detection on mwtwt dataset:
+Our MLA on zero-shot stance detection on mwtwt dataset:
 
 ```
->>> sh scripts/run_tmpt.sh
+>>> sh scripts/run_MLA.sh
 >>> input training dataset: [mtse, mccq, mwtwt, mruc, mtwq]: mwtwt
 >>> input train dataset mode: [in_target, zero_shot]: zero_shot
->>> input model framework: [tmpt, tmpt_gpt_cot]: tmpt
+>>> input model framework: [MLA, MLA_gpt_cot]: MLA
 >>> input model name: [bert_vit, roberta_vit, kebert_vit]: bert_vit
 >>> input running mode: [sweep, wandb, normal]: normal
 >>> input training cuda idx: Your Cuda index
 ```
 
-# Citation
-
-The BibTex of the citation is as follows:
-
-```bibtex
-@misc{liang2024multimodal,
-      title={Multi-modal Stance Detection: New Datasets and Model}, 
-      author={Bin Liang and Ang Li and Jingqian Zhao and Lin Gui and Min Yang and Yue Yu and Kam-Fai Wong and Ruifeng Xu},
-      year={2024},
-      eprint={2402.14298},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
-
 # Contact
-
-angli@stu.hit.edu.cn
-
 If you find difficulty hydrating the datasets or encounter problems while using our datasets, feel free to contact us. If you find our paper or codes useful, please give us a kind star. ❤️
