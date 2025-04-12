@@ -58,5 +58,5 @@ Our MLA on zero-shot stance detection on mwtwt dataset:
 >>> input training cuda idx: Your Cuda index
 ```
 
-# Contact
-If you find difficulty hydrating the datasets or encounter problems while using our datasets, feel free to contact us. If you find our paper or codes useful, please give us a kind star. ❤️
+# Acknowledges
+The code is implemented based on the excellent work: [Multi-Modal-Stance-Detection](https://github.com/Leon-Francis/Multi-Modal-Stance-Detection)
