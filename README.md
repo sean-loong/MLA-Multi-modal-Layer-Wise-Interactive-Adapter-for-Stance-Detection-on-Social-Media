@@ -5,12 +5,12 @@ This repository open-sources the code and datas in **Multi-modal Layer-Wise Inte
 
 
 # Datasets
-Coming soon!!
+Due to Twitter’s developer agreement and privacy policy, researchers are only permitted to publicly share tweet and user IDs rather than the complete content. As a result, over time, the original [datasets](https://github.com/Leon-Francis/Multi-Modal-Stance-Detection) suffer from data loss caused by tweet deletions, account deactivations, and other platform-related changes. Upon recognizing this issue, we re-crawled all tweet and media content based on the IDs provided in the original datasets, and performed systematic data cleaning and reconstruction. Specifically, we filtered out samples with missing or incomplete textual or visual content, and ensured that each retained instance includes both modalities. 
 
-Noted: Due to Twitter's [developer agreement and privacy policy](https://developer.x.com/en/more/developer-terms/agreement-and-policy), researchers are only permitted to public Post IDs and User IDs. Therefore, in our GitHub repository, we open source the Post IDs and our annotation results. This approach aligns with the current mainstream practices in Twitter data research. The data is released for non-commercial research use.
+The organization and standardization of the dataset are currently underway!
 
 ## How to Hydrate
-
+Noted: Due to Twitter's [developer agreement and privacy policy](https://developer.x.com/en/more/developer-terms/agreement-and-policy), researchers are only permitted to public Post IDs and User IDs. Therefore, in our GitHub repository, we open source the Post IDs and our annotation results. This approach aligns with the current mainstream practices in Twitter data research. The data is released for non-commercial research use.
 Please refer to [tools and libraries](https://developer.x.com/en/docs/twitter-api/tools-and-libraries/v2) to view hydrating tools supported by Twitter. [Tweepy](https://github.com/tweepy/tweepy) and [twarc](https://twarc-project.readthedocs.io/en/latest/twarc2_en_us/) are two commonly used tools. Before using these tools, you need to apply for the Twitter developer account. Afterwards, use these tools to supplement the content based on Post IDs.
 
 ## Details about the datasets
